@@ -17,4 +17,8 @@ public class Paire {
         int y = in.nextInt();
         this.y = y;
     }
+
+    public String toString(){
+        return ("(" + x + ";" + y +")");
+    }
 }
