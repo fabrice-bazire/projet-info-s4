@@ -1,8 +1,8 @@
 import java.util.Scanner;
-public class Paire {
+public class Paire extends Liste {
     static Scanner in = new Scanner (System.in);
 
-    private int x, y;
+    public int x, y;
 
     public Paire(int x, int y){
         this.x = x;
@@ -16,6 +16,14 @@ public class Paire {
         System.out.print("Entrez y : ");
         int y = in.nextInt();
         this.y = y;
+    }
+
+    public int getx(){
+        return this.x;
+    }
+
+    public int gety(){
+        return this.y;
     }
 
     public String toString(){
