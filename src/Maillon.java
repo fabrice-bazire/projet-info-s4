@@ -1,3 +1,4 @@
+
 public class Maillon {
 	private Paire valeur;
 	private Maillon suivant;
@@ -58,7 +59,4 @@ public class Maillon {
 			return false;
 		return true;
 	}
-	
-
-
 }
