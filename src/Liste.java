@@ -37,6 +37,35 @@ public class Liste {
 				
 			}
 		}
+
+		public boolean addAfter(Paire p, Maillon m){
+		    if (m.getSuivant() == null){
+		        return false;
+            }else{
+                Maillon l = m.getSuivant();
+                Maillon x = new Maillon (p);
+                m.setSuivant(x);
+                x.setSuivant(l);
+                return true;
+            }
+		}
+
+		public boolean addBefore(Paire p, Maillon m){
+            Maillon x = new Maillon (p);
+			Maillon ref = this.getTete();
+			while (ref != null){
+				if (ref.getSuivant().equals(m)){
+                    Maillon l = ref.getSuivant();
+                    ref.setSuivant(x);
+                    x.setSuivant(l);
+                    return true;
+                }else{
+				    ref = ref.getSuivant();
+                }
+			}
+			return false;
+		}
+
 		private Maillon getDernierElement(){
 			Maillon dernier=this.tete;
 			while(dernier.getSuivant()!=null){
@@ -342,11 +371,11 @@ public Liste compare (Liste CelluleVivante, Liste voisinmort) {
                 refbis = b.tete;
                 while (refbis != null) {
                     if (ref.getValeur().compare(refbis.getValeur()) > 0) {
-                        b.addLast(ref.getValeur());
+                        b.addAfter(ref.getValeur(), refbis);
                         refbis = null;
                     } else {
                         if (ref.getValeur().compare(refbis.getValeur()) < 0) {
-                            b.addInHead(ref.getValeur());
+                            b.addBefore(ref.getValeur(), refbis);
                             refbis = null;
                         } else {
                             refbis = refbis.getSuivant();
