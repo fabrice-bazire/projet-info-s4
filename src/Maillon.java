@@ -59,7 +59,4 @@ public class Maillon {
 			return false;
 		return true;
 	}
-	
-
-
 }
