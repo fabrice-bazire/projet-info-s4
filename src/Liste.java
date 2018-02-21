@@ -379,18 +379,6 @@ public class Liste {
                 this.tete = b.tete;
             }
         }
-
-        public boolean listetriée (){
-		    Maillon m = this.tete;
-		    while (m.getSuivant() != null){
-		        if (m.getValeur().compare(m.getSuivant().getValeur()) < 0) {
-		            m = m.getSuivant();
-		        }else{
-		          return false;
-		        }
-		    }
-            return true;
-        }
 	}
 	
 	
