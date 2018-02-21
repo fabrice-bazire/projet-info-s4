@@ -391,6 +391,12 @@ public class Liste {
 		    }
             return true;
         }
+
+        public void calculgeneration(){
+		    Liste genmere, genfille;
+		    genmere = this;
+		    genfille = this.
+        }
 	}
 	
 	
