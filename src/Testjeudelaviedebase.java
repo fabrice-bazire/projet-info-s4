@@ -4,8 +4,7 @@ public class Testjeudelaviedebase {
     public static void main (String[]args) {
         Liste listededepart = new Liste();
         listededepart.addLast(new Paire(8, 3));
-        listededepart.addLast(new Paire(7, 3));
-        listededepart.addLast(new Paire(5, 3));
+        listededepart.addLast(new Paire(9, 3));
         listededepart.addLast(new Paire(6, 3));
         listededepart.addLast(new Paire(5, 3));
         listededepart.addLast(new Paire(4, 3));

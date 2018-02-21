@@ -37,6 +37,35 @@ public class Liste {
 				
 			}
 		}
+
+		public boolean addAfter(Paire p, Maillon m){
+		    if (m.getSuivant() == null){
+		        return false;
+            }else{
+                Maillon l = m.getSuivant();
+                Maillon x = new Maillon (p);
+                m.setSuivant(x);
+                x.setSuivant(l);
+                return true;
+            }
+		}
+
+		public boolean addBefore(Paire p, Maillon m){
+            Maillon x = new Maillon (p);
+			Maillon ref = this.getTete();
+			while (ref.getSuivant() != null){
+				if (ref.getSuivant().getValeur().equals(m.getValeur())){
+                    Maillon l = ref.getSuivant();
+                    ref.setSuivant(x);
+                    x.setSuivant(l);
+                    return true;
+                }else{
+				    ref = ref.getSuivant();
+                }
+			}
+			return false;
+		}
+
 		private Maillon getDernierElement(){
 			Maillon dernier=this.tete;
 			while(dernier.getSuivant()!=null){
@@ -69,81 +98,74 @@ public class Liste {
 			 return trouve;
 		 }
 		 
-public Liste concatener(Liste l2) {
-	
-	Maillon ref = this.tete;
-	if(this.isEmpty()){
-		this.tete=l2.getTete();
-	}else{
-		Maillon dernier = this.getTete();
-		while(dernier.getSuivant()!=null){
-			dernier=dernier.getSuivant();
-		}
-		dernier.setSuivant(l2.getTete());
-	}
-	
-	
-	return this;
-}
+         public Liste concatener(Liste l2) {
+		    Maillon ref = this.tete;
+	        if(this.isEmpty()){
+		        this.tete=l2.getTete();
+	        }else{
+		        Maillon dernier = this.getTete();
+		        while(dernier.getSuivant()!=null){
+			        dernier=dernier.getSuivant();
+		        }
+		    dernier.setSuivant(l2.getTete());
+	        }
+	        return this;
+         }
 
 
-public Liste compare (Liste CelluleVivante, Liste voisinmort) {
-	Liste CelluleMorteQuiPasseAVivant = new Liste();
-	Maillon ref = voisinmort.tete;
-	int nombreVoisins = 0;
-	while ( ref!= null) {
-		Paire p = ref.getValeur();
-	nombreVoisins= NombreVoisin(CelluleVivante, p);
-		System.out.println("Le couple "+ref.getValeur().toString()+" possede "+nombreVoisins+" voisins vivants");;
-		if(nombreVoisins == 3) {
-			CelluleMorteQuiPasseAVivant.addLast(ref.getValeur());
+    public Liste compare (Liste CelluleVivante, Liste voisinmort) {
+	    Liste CelluleMorteQuiPasseAVivant = new Liste();
+	    Maillon ref = voisinmort.tete;
+	    int nombreVoisins = 0;
+	    while ( ref!= null) {
+	    	Paire p = ref.getValeur();
+	        nombreVoisins= NombreVoisin(CelluleVivante, p);
+		    System.out.println("Le couple "+ref.getValeur().toString()+" possede "+nombreVoisins+" voisins vivants");;
+		    if(nombreVoisins == 3) {
+		    	CelluleMorteQuiPasseAVivant.addLast(ref.getValeur());
+		    }
+		    ref=ref.getSuivant();
+	    }
+	    return CelluleMorteQuiPasseAVivant;
+    }
+		 
+		 
+	public int NombreVoisin(Liste l, Paire p) {
+		int nombreVoisin = 0;
+	    Paire voisin1 = new Paire(p.getx()-1, p.gety()+1);
+	    Paire voisin2 = new Paire(p.getx(), p.gety()+1);
+		Paire voisin3 = new Paire(p.getx()+1, p.gety()+1);
+		Paire voisin4 = new Paire(p.getx()-1, p.gety());
+		Paire voisin5 = new Paire(p.getx()+1, p.gety());
+		Paire voisin6 = new Paire(p.getx()-1, p.gety()-1);
+		Paire voisin7 = new Paire(p.getx(), p.gety()-1);
+		Paire voisin8 = new Paire(p.getx()+1, p.gety()-1);
+		if (l.contains(voisin1)) {
+		    nombreVoisin++;
 		}
-		ref=ref.getSuivant();
+		if (l.contains(voisin2)) {
+		    nombreVoisin++;
+		}
+		if (l.contains(voisin3)) {
+		    nombreVoisin++;
+		}
+		if (l.contains(voisin4)) {
+		    nombreVoisin++;
+		}
+		if (l.contains(voisin5)) {
+		    nombreVoisin++;
+		}
+		if (l.contains(voisin6)) {
+		    nombreVoisin++;
+		}
+		if (l.contains(voisin7)) {
+		    nombreVoisin++;
+		}
+		if (l.contains(voisin8)) {
+		    nombreVoisin++;
+		}
+		return nombreVoisin;
 	}
-	
-	
-	return CelluleMorteQuiPasseAVivant;
-}
-		 
-		 
-		public int NombreVoisin(Liste l, Paire p) {
-			int nombreVoisin = 0;
-		    Paire voisin1 = new Paire(p.getx()-1, p.gety()+1);
-		    Paire voisin2 = new Paire(p.getx(), p.gety()+1);
-		    Paire voisin3 = new Paire(p.getx()+1, p.gety()+1);
-		    Paire voisin4 = new Paire(p.getx()-1, p.gety());
-		    Paire voisin5 = new Paire(p.getx()+1, p.gety());
-		    Paire voisin6 = new Paire(p.getx()-1, p.gety()-1);
-		    Paire voisin7 = new Paire(p.getx(), p.gety()-1);
-		    Paire voisin8 = new Paire(p.getx()+1, p.gety()-1);
-			
-			
-			if (l.contains(voisin1)) {
-				nombreVoisin++;
-			}
-			if (l.contains(voisin2)) {
-				nombreVoisin++;
-			}
-			if (l.contains(voisin3)) {
-				nombreVoisin++;
-			}
-			if (l.contains(voisin4)) {
-				nombreVoisin++;
-			}
-			if (l.contains(voisin5)) {
-				nombreVoisin++;
-			}
-			if (l.contains(voisin6)) {
-				nombreVoisin++;
-			}
-			if (l.contains(voisin7)) {
-				nombreVoisin++;
-			}
-			if (l.contains(voisin8)) {
-				nombreVoisin++;
-			}
-			return nombreVoisin;
-		}
 		 
 		 
 		 public String toString(){
@@ -342,11 +364,11 @@ public Liste compare (Liste CelluleVivante, Liste voisinmort) {
                 refbis = b.tete;
                 while (refbis != null) {
                     if (ref.getValeur().compare(refbis.getValeur()) > 0) {
-                        b.addLast(ref.getValeur());
+                        b.addAfter(ref.getValeur(), refbis);
                         refbis = null;
                     } else {
                         if (ref.getValeur().compare(refbis.getValeur()) < 0) {
-                            b.addInHead(ref.getValeur());
+                            b.addBefore(ref.getValeur(), refbis);
                             refbis = null;
                         } else {
                             refbis = refbis.getSuivant();
@@ -356,18 +378,6 @@ public Liste compare (Liste CelluleVivante, Liste voisinmort) {
                 }
                 this.tete = b.tete;
             }
-        }
-
-        public boolean listetriée (){
-		    Maillon m = this.tete;
-		    while (m.getSuivant() != null){
-		        if (m.getValeur().compare(m.getSuivant().getValeur()) < 0) {
-		            m = m.getSuivant();
-		        }else{
-		          return false;
-		        }
-		    }
-            return true;
         }
 	}
 	
