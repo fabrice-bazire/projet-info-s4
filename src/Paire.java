@@ -73,9 +73,12 @@ public class Paire extends Liste {
 	        return x == paire.x && y == paire.y;
 	    }
 
-	    @Override
+	/**
+	 *
+	 * @return
+	 */
+	@Override
 	    public int hashCode() {
-
 	        return Objects.hash(x, y);
 	    }
 
