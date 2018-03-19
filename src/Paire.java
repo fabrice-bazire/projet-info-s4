@@ -1,4 +1,4 @@
-package JeuDeLavieModif;
+
 import java.util.*;
 public class Paire extends Liste {
 	   static Scanner in = new Scanner (System.in);
@@ -32,6 +32,24 @@ public class Paire extends Liste {
 
 	        return Objects.hash(x, y);
 	    }
+
+	    public int compareto (Paire p){
+	        if (this.getx() < p.getx()){
+                return -1;
+            }
+            if (this.getx() > p.getx()){
+                return 1;
+            }
+            if (this.getx() == p.getx()){
+                if (this.gety() < p.gety()){
+                    return -1;
+                }
+                if (this.gety() > p.gety()){
+                    return 1;
+                }
+            }
+	        return 0;
+        }
 
 	    public int getx(){
 	        return this.x;

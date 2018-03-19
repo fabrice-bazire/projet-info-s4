@@ -1,4 +1,3 @@
-package JeuDeLavieModif;
 
 public class Maillon {
 	private Paire valeur;
