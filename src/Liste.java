@@ -12,9 +12,11 @@ public class Liste {
 		{
 			this.tete=tete;
 		}
+
 		public Maillon getTete() {
 			return this.tete;
 		}
+
 		public void setTete(Maillon tete) {
 			this.tete = tete;
 		}
@@ -22,6 +24,7 @@ public class Liste {
 		public boolean isEmpty(){
 			return(this.tete==null);
 		}
+
 		//ajoute en debut
 		public void addInHead(Paire p){
 			Maillon ancienneTete = this.tete;
@@ -38,33 +41,24 @@ public class Liste {
 			}
 		}
 
-		public boolean addAfter(Paire p, Maillon m){
-		    if (m.getSuivant() == null){
-		        return false;
-            }else{
-                Maillon l = m.getSuivant();
-                Maillon x = new Maillon (p);
-                m.setSuivant(x);
-                x.setSuivant(l);
-                return true;
-            }
-		}
-
-		public boolean addBefore(Paire p, Maillon m){
-            Maillon x = new Maillon (p);
-			Maillon ref = this.getTete();
-			while (ref.getSuivant() != null){
-				if (ref.getSuivant().getValeur().equals(m.getValeur())){
-                    Maillon l = ref.getSuivant();
-                    ref.setSuivant(x);
-                    x.setSuivant(l);
-                    return true;
-                }else{
-				    ref = ref.getSuivant();
+		public void add (Paire p){
+            Maillon ref = this.tete;
+		    if (ref == null){
+		    	this.tete = new Maillon (p);
+			}else{
+		        while (ref.getSuivant() != null) {
+		            ref = ref.getSuivant();
                 }
-			}
-			return false;
-		}
+                if (ref.getValeur().compareto(p) > 0) {
+                    Maillon x = ref.getSuivant();
+                    Maillon a = new Maillon(p);
+                    a.setSuivant(x);
+                    ref.setSuivant(a);
+                } else {
+                    this.addLast(p);
+                }
+            }
+        }
 
 		private Maillon getDernierElement(){
 			Maillon dernier=this.tete;
@@ -74,7 +68,7 @@ public class Liste {
 			return dernier;
 		}
 		
-		 public int taille(){
+		public int taille(){
 			 int longueur=0;
 			 Maillon ref = getTete();
 			 while(ref!=null) {
@@ -85,7 +79,7 @@ public class Liste {
 		       
 		    }
 		 
-		 public boolean contains(Paire p) {
+		public boolean contains(Paire p) {
 			 boolean trouve = false;
 			 Maillon ref = getTete();
 			 while(!trouve && ref !=null) {
@@ -98,7 +92,7 @@ public class Liste {
 			 return trouve;
 		 }
 		 
-         public Liste concatener(Liste l2) {
+        public Liste concatener(Liste l2) {
 		    Maillon ref = this.tete;
 	        if(this.isEmpty()){
 		        this.tete=l2.getTete();
@@ -113,7 +107,7 @@ public class Liste {
          }
 
 
-    public Liste compare (Liste CelluleVivante, Liste voisinmort) {
+        public Liste compare (Liste CelluleVivante, Liste voisinmort) {
 	    Liste CelluleMorteQuiPasseAVivant = new Liste();
 	    Maillon ref = voisinmort.tete;
 	    int nombreVoisins = 0;
@@ -130,7 +124,7 @@ public class Liste {
     }
 		 
 		 
-	public int NombreVoisin(Liste l, Paire p) {
+	    public int NombreVoisin(Liste l, Paire p) {
 		int nombreVoisin = 0;
 	    Paire voisin1 = new Paire(p.getx()-1, p.gety()+1);
 	    Paire voisin2 = new Paire(p.getx(), p.gety()+1);
@@ -168,7 +162,7 @@ public class Liste {
 	}
 		 
 		 
-		 public String toString(){
+		public String toString(){
 		        String s = "Voici les coordonnées des cellules :\n";
 				
 				if (! this.isEmpty()) {
@@ -187,7 +181,7 @@ public class Liste {
 		        return s;
 		    }
 
-		 public Liste verifierVoisinsretournecellulesvivantes() {
+		public Liste verifierVoisinsretournecellulesvivantes() {
 		        Liste cellulesvivantes = new Liste();
 		        int nbvoisins = 0;
 		        Liste t = this;
@@ -251,7 +245,7 @@ public class Liste {
 		        return cellulesvivantes;
 		    }
 
-		 public Liste verifierVoisinsretournelistedesvoisinsvivants(){
+		public Liste verifierVoisinsretournelistedesvoisinsvivants(){
 			Liste lesvoisinsvivants = new Liste();
 			Maillon ref = this.tete;
 			while(ref != null){
@@ -293,7 +287,7 @@ public class Liste {
 			return lesvoisinsvivants;
 		}
 
-		 public Liste verifierVoisinsretournelistedesvoisinsmorts(){
+		public Liste verifierVoisinsretournelistedesvoisinsmorts(){
 			Liste lesvoisinsmorts = new Liste();
 			Maillon ref = this.tete;
 			while(ref != null){
@@ -355,7 +349,7 @@ public class Liste {
 
         }
 
-        public void triliste () {
+       /* public void triliste () {
             Liste b = new Liste();
             b.addInHead(this.tete.getValeur());
             Maillon ref = this.tete.getSuivant();
@@ -378,25 +372,28 @@ public class Liste {
                 }
                 this.tete = b.tete;
             }
+        }*/
+
+        public Liste newgeneration (){
+		     Liste a = new Liste();
+             Liste genmere = this;
+             Liste listecellulevivante = genmere.verifierVoisinsretournecellulesvivantes();
+             Liste listevoisinVivant = genmere.verifierVoisinsretournelistedesvoisinsvivants();
+             Liste listevoisinMort = genmere.verifierVoisinsretournelistedesvoisinsmorts()  ;
+             Liste MortAVie = a.compare(listevoisinVivant, listevoisinMort);
+             return listecellulevivante.concatener(MortAVie);
         }
 
-        public boolean listetriée (){
-		    Maillon m = this.tete;
-		    while (m.getSuivant() != null){
-		        if (m.getValeur().compare(m.getSuivant().getValeur()) < 0) {
-		            m = m.getSuivant();
-		        }else{
-		          return false;
-		        }
-		    }
-            return true;
-        }
-
-        public void calculgeneration(){
-		    Liste genmere, genfille;
-		    genmere = this;
-		    genfille = this.
-        }
+        /*public void comportementasymptotique() {
+            Liste genmere, genfille;
+            genmere = this;
+            genfille = newgeneration();
+            while (diff) {
+                genmere = newgeneration();
+                genfille = newgeneration();
+                genfille = newgeneration();
+            }
+        }*/
 	}
 	
 	
