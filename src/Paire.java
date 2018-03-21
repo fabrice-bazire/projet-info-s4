@@ -82,7 +82,16 @@ public class Paire extends Liste {
 	        return Objects.hash(x, y);
 	    }
 
-	    public int compare (Paire p){
+
+	/**
+	 * Compare deux paires
+	 *
+	 * @param p
+	 * 		la paire àcomparer
+	 *
+	 * @return 0 si les paires sont egales, -1 sinon
+	 */
+	public int compare (Paire p){
 	        if (this.getx() < p.getx()){
                 return -1;
             }
@@ -100,15 +109,30 @@ public class Paire extends Liste {
 	        return 0;
         }
 
-	    public int getx(){
+	/**
+	 * Retourne la valeur de x
+	 *
+	 * @return x
+	 */
+	public int getx(){
 	        return this.x;
 	    }
 
-	    public int gety(){
+	/**
+	 * Retourne la valeur de y
+	 *
+	 * @return y
+	 */
+	public int gety(){
 	        return this.y;
 	    }
 
-	    public String toString(){
+	/**
+	 * Permet l'affichage des coordonnees
+	 *
+	 * @return un couple de coordonnees
+	 */
+	public String toString(){
 	        return ("(" + x + ";" + y +")");
 	    }
 }
