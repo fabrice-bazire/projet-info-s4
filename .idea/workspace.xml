@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7afdc676-4be3-45af-aff2-31644be3133e" name="Default" comment="" />
+    <list default="true" id="7afdc676-4be3-45af-aff2-31644be3133e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/JeuDeLavieModif/Liste.java" afterPath="$PROJECT_DIR$/JeuDeLavieModif/Liste.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Liste.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Liste.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JeuDeLavieModif/Liste.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7701">
-              <caret line="464" column="0" lean-forward="false" selection-start-line="464" selection-start-column="0" selection-end-line="464" selection-end-column="0" />
+            <state relative-caret-position="2923">
+              <caret line="464" column="2" lean-forward="false" selection-start-line="464" selection-start-column="2" selection-end-line="464" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -56,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Testjeudelaviedebase.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Testjeudelaviedebase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Testjeudelaviedebase.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -115,9 +117,9 @@
         <option value="$PROJECT_DIR$/src/Liste.java" />
         <option value="$PROJECT_DIR$/Message_sans_titre/Main.java" />
         <option value="$PROJECT_DIR$/Message_sans_titre/Liste.java" />
-        <option value="$PROJECT_DIR$/JeuDeLavieModif/Liste.java" />
         <option value="$PROJECT_DIR$/JeuDeLavieModif/Main.java" />
         <option value="$PROJECT_DIR$/src/Testjeudelaviedebase.java" />
+        <option value="$PROJECT_DIR$/JeuDeLavieModif/Liste.java" />
       </list>
     </option>
   </component>
@@ -143,10 +145,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,15 +178,11 @@
               <item name="production" type="462c0819:PsiDirectoryNode" />
               <item name="projet-info-s4" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="projet-info-s4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projet-info-s4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,6 +348,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -708,14 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JeuDeLavieModif/Liste.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7701">
-          <caret line="464" column="0" lean-forward="false" selection-start-line="464" selection-start-column="0" selection-end-line="464" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JeuDeLavieModif/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -736,6 +726,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JeuDeLavieModif/Liste.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2923">
+          <caret line="464" column="2" lean-forward="false" selection-start-line="464" selection-start-column="2" selection-end-line="464" selection-end-column="2" />
           <folding />
         </state>
       </provider>
