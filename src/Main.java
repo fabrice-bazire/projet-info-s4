@@ -1,5 +1,5 @@
 
-public class Main {
+/*public class Main {
 
     public static void main(String[] args) {
         Liste a = new Liste();
@@ -23,4 +23,4 @@ public class Main {
         System.out.println(finale.toString());
     }
 
-}
+}*/
