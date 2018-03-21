@@ -33,7 +33,7 @@ public class Paire extends Liste {
 	        return Objects.hash(x, y);
 	    }
 
-	    public int compare (Paire p){
+	    public int compareto (Paire p){
 	        if (this.getx() < p.getx()){
                 return -1;
             }
