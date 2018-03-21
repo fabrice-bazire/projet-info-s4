@@ -1,13 +1,15 @@
+package JeuDeLavieModif;
+
 public class Maillon {
 	private Paire valeur;
 	private Maillon suivant;
-
-
-
+		
+	
+	
 	public Maillon (Paire p) {
 		this.valeur=p;
 		this.suivant=null;
-
+		
 	}
 	public Maillon(Paire p, Maillon m) {
 		valeur = p;
