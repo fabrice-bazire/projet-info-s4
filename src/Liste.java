@@ -179,8 +179,26 @@ public class Liste {
 				}
 		        return s;
 		    }
+
+	//comportement asymptotique / determination periode
+	public void comportementasymptotique() {
+		Liste genmere, genfille, genrecherchee;
+		int periode = 0;
+		genmere = this;
+		genfille = genmere.newgeneration();
+		boolean sameconfig = false;
+		while (!sameconfig) {
+			periode++;
+			genmere = genmere.newgeneration();
+			genfille = genfille.newgeneration();
+			if (genmere.compare(genfille)) {
+				sameconfig = true;
+				genrecherchee = genfille;
+			}
+		}
 	}
-	
+	}
+
 	
 	
 	
