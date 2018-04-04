@@ -1,34 +1,34 @@
-public class Maillon {
+public class Maillon<T> {
 
 
-    private Paire valeur;
-    private Maillon suivant;
+    private T valeur;
+    private Maillon<T> suivant;
 
 
 
-    public Maillon (Paire p) {
+    public Maillon (T p) {
         this.valeur=p;
         this.suivant=null;
 
     }
-    public Maillon(Paire p, Maillon m) {
+    public Maillon(T p, Maillon<T> m) {
         valeur = p;
         suivant = m;
     }
 
-    public Paire getValeur() {
+    public T getValeur() {
         return valeur;
     }
 
-    public void setValeur(Paire valeur) {
+    public void setValeur(T valeur) {
         this.valeur = valeur;
     }
 
-    public Maillon getSuivant() {
+    public Maillon<T> getSuivant() {
         return suivant;
     }
 
-    public void setSuivant(Maillon suivant) {
+    public void setSuivant(Maillon<T> suivant) {
         this.suivant = suivant;
     }
     /* (non-Javadoc)
@@ -52,7 +52,7 @@ public class Maillon {
             return false;
         if (!(obj instanceof Maillon))
             return false;
-        Maillon other = (Maillon) obj;
+        Maillon<T> other = (Maillon<T>) obj;
         if (valeur == null) {
             if (other.valeur != null)
                 return false;

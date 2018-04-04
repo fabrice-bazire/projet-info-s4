@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class Paire extends Liste {
+public class Paire extends Rules {
     static Scanner in = new Scanner (System.in);
 
     public int x, y;

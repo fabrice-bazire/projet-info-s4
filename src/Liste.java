@@ -1,119 +1,74 @@
-public class Liste {
-
-
-    Maillon tete;
+public abstract class Liste<T> {
+    Maillon<T> tete;
 
     public Liste() {
         this.tete = null;
     }
-
-    public Liste(Maillon tete) {
+    public Liste (Maillon<T> tete) {
         this.tete = tete;
     }
-
-    public Maillon getTete() {
+    public Maillon<T> getTete() {
         return this.tete;
     }
-
-    public void setTete(Maillon tete) {
+    public void setTete(Maillon<T> tete) {
         this.tete = tete;
     }
-
     public boolean isEmpty() {
         return (this.tete == null);
     }
+    public boolean identique (Liste<T> l){
+        Maillon<T> ref = this.tete;
+        Maillon<T> ref1 = l.tete;
 
-    //ajoute en debut
-    public void addInHead(Paire p) {
-        Maillon ancienneTete = this.tete;
-        tete = new Maillon(p, ancienneTete);
-    }
-
-    public void addLast(Paire p) {
-        if (isEmpty()) {
-            tete = new Maillon(p);
-        } else {
-            Maillon dernier = getDernierElement();
-            dernier.setSuivant(new Maillon(p));
+        if (this.taille() != l.taille() || this.isEmpty() || l.isEmpty()){
+            return false;
 
         }
+        while (ref.getSuivant() != null) {
+            if (ref.getValeur().equals(ref1.getValeur())) {
+                ref = ref.getSuivant();
+                ref1 = ref1.getSuivant();
+
+            } else {
+                return false;
+
+            }
+        }
+
+
+        return true;
+    }
+    public void addInHead(T p) {
+        Maillon<T> ancienneTete = this.tete;
+        tete = new Maillon<T>(p, ancienneTete);
     }
 
-    public boolean addAfter(Paire p, Maillon m) {
+    public boolean addAfter(T p, Maillon<T> m) {
         if (m.getSuivant() == null) {
             return false;
         } else {
-            Maillon l = m.getSuivant();
-            Maillon x = new Maillon(p);
+            Maillon<T> l = m.getSuivant();
+            Maillon<T> x = new Maillon<T>(p);
             m.setSuivant(x);
             x.setSuivant(l);
             return true;
         }
     }
+    public abstract boolean addTrier(T p) ;
+
+    protected abstract void addLast(T p);
 
 
-    public boolean addTrier(Paire p) {
-        Maillon x = new Maillon(p);
-        Maillon ref = this.tete;
-        Maillon prec = null;
-
-        //System.out.println(p.toString());
-        if (this.isEmpty())
-            this.addInHead(p);
-
-        else if(ref.getValeur().compareto(x.getValeur()) > 0)
-            this.addInHead(p);
-
-        else {
-
-            while (ref.getValeur().compareto(x.getValeur()) <= 0 && ref != null) {
-
-                prec = ref;
-                ref = ref.getSuivant();
-
-            }
-
-            if(ref == null)
-                this.addLast(p);
-
-            else {
-
-            x.setSuivant(prec.getSuivant());
-            prec.setSuivant(x);}}
-            /*
-            Maillon tmp = ref.getSuivant();
-            ref.setSuivant(x);
-            x.setSuivant(tmp);
-            ref = ref.getSuivant();*/
-            System.out.println(this);
-            return true;
-
-              /* Paire a = ref.getValeur();
-                ref.setValeur(x.getValeur());
-                ref.getSuivant().setValeur(a);
-*/
-
-
-
-    }
-
-
-
-
-
-
-
-    private Maillon getDernierElement(){
-        Maillon dernier=this.tete;
+    protected Maillon<T> getDernierElement(){
+        Maillon<T> dernier=this.tete;
         while(dernier.getSuivant()!=null){
             dernier = dernier.getSuivant();
         }
         return dernier;
     }
-
     public int taille(){
         int longueur=0;
-        Maillon ref = getTete();
+        Maillon<T> ref = getTete();
         while(ref!=null) {
             longueur++;
             ref=ref.getSuivant();
@@ -122,25 +77,12 @@ public class Liste {
 
     }
 
-    public boolean contains(Paire p) {
-        boolean trouve = false;
-        Maillon ref = getTete();
-        while(!trouve && ref !=null) {
-            if(ref.getValeur().equals(p)){
-                trouve=true;
-            }else {
-                ref=ref.getSuivant();
-            }
-        }
-        return trouve;
-    }
-
-    public Liste concatener(Liste l2) {
-        Maillon ref = this.tete;
+    public Liste<T> concatener(Liste<T> l2) {
+        Maillon<T> ref = this.tete;
         if(this.isEmpty()){
             this.tete=l2.getTete();
         }else{
-            Maillon dernier = this.getTete();
+            Maillon<T> dernier = this.getTete();
             while(dernier.getSuivant()!=null){
                 dernier=dernier.getSuivant();
             }
@@ -148,7 +90,24 @@ public class Liste {
         }
         return this;
     }
+   public  void supplesdoublons (){
+        Liste<T> b = new Rules();
+        Maillon<T> ref = this.tete;
+        while(ref != null){
+            if (!b.contains(ref.getValeur())) {
+                b.addLast(ref.getValeur());
+            }
+            ref = ref.getSuivant();
+        }
+        this.tete = b.tete;
 
+    }
+
+    protected abstract boolean contains(T valeur);
+
+    protected abstract void addLast(Paire valeur);
+
+    protected abstract boolean contains(Paire valeur);
 
     public String toString(){
         String s = "Voici les coordonnées des cellules :\n";
@@ -157,7 +116,7 @@ public class Liste {
 
             s = s + tete.getValeur().toString() + "\n";
 
-            Maillon paire=tete.getSuivant();
+            Maillon<T> paire=tete.getSuivant();
             while (paire != null) {
 
                 s = s + paire.getValeur().toString()+"\n";
@@ -168,4 +127,16 @@ public class Liste {
         }
         return s;
     }
+
+    public abstract int comportement_asymptotique () ;
+    public abstract Liste<T> verifierVoisinsretournecellulesvivantes();
+    public abstract Liste<T> verifierVoisinsretournelistedesvoisinsvivants();
+    public abstract Liste<T> verifierVoisinsretournelistedesvoisinsmorts();
+    public abstract int NombreVoisin(Liste<T> l, T p);
+    public abstract Liste<T> resurrection (Liste<T> CelluleVivante, Liste<T> voisinmort) ;
+    public abstract Liste<T> newgeneration ();
+
+
+
+
 }
