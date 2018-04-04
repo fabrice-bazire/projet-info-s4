@@ -2,7 +2,8 @@
 public class Main {
 
     public static void main(String[] args) {
-        Liste a = new Liste();
+
+     /*   Liste a = new Liste();
         Liste listededepart = new Liste();
         listededepart.addLast(new Paire(2, 3));
         listededepart.addLast(new Paire(3, 3));
@@ -23,4 +24,7 @@ public class Main {
         System.out.println(finale.toString());
     }
 
+}
+*/
+    }
 }
