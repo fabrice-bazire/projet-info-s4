@@ -273,53 +273,6 @@ public class Rules extends Liste {
 
     }
 
-    @Override
-    public boolean addTrier(Object o) {
-        Paire p = (Paire) o;
-
-            Maillon<Paire> x = new Maillon<Paire>(p);
-            Maillon<Paire> ref = this.tete;
-            Maillon<Paire> prec = null;
-
-            //System.out.println(p.toString());
-            if (this.isEmpty())
-                this.addInHead(p);
-
-            else if(ref.getValeur().compareto(x.getValeur()) > 0)
-                this.addInHead(p);
-
-            else {
-
-                while (ref.getValeur().compareto(x.getValeur()) <= 0 && ref != null) {
-
-                    prec = ref;
-                    ref = ref.getSuivant();
-
-                }
-
-                if(ref == null)
-                    this.addLast(p);
-
-                else {
-
-                    x.setSuivant(prec.getSuivant());
-                    prec.setSuivant(x);}}
-            /*
-            Maillon tmp = ref.getSuivant();
-            ref.setSuivant(x);
-            x.setSuivant(tmp);
-            ref = ref.getSuivant();*/
-            System.out.println(this);
-            return true;
-
-              /* Paire a = ref.getValeur();
-                ref.setValeur(x.getValeur());
-                ref.getSuivant().setValeur(a);
-*/
-
-
-
-        }
 
 
     protected void addLast(Object o) {
@@ -395,5 +348,9 @@ public class Rules extends Liste {
     }
 
 
+    @Override
+    public int compareTo(Object o) {
+        return this.compareTo(o);
+    }
 }
 

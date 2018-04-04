@@ -1,14 +1,15 @@
 
 import java.util.*;
 
-public class Paire extends Rules {
+public class Paire implements Comparable<Paire> {
     static Scanner in = new Scanner (System.in);
 
-    public int x, y;
+    public int x, y, nombrevoisin;
 
-    public Paire(int x, int y){
+    public Paire(int x, int y, int voisins){
         this.x = x;
         this.y = y;
+        this.nombrevoisin = voisins;
     }
 
     public Paire(){
@@ -18,6 +19,7 @@ public class Paire extends Rules {
         System.out.print("Entrez y : ");
         int y = in.nextInt();
         this.y = y;
+        this.nombrevoisin = 0;
     }
 
     @Override
@@ -46,7 +48,9 @@ public class Paire extends Rules {
         return ("(" + x + ";" + y +")");
     }
 
-    public int compareto(Paire p){
+
+    @Override
+    public int compareTo(Paire p) {
         if (this.getx() < p.getx()){
             return -1 ;
         }
@@ -62,12 +66,6 @@ public class Paire extends Rules {
             }
 
         }
-
-        return 0 ;
-
+        return 0;
     }
-
-
-
-
 }
