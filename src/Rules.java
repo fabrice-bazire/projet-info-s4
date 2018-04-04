@@ -192,7 +192,7 @@ public class Rules extends Liste{
             }
         }*/
 
-    /*public Liste newgeneration (){
+    public Liste newgeneration (){
         Liste a = new Liste();
         Liste genmere = this;
         Liste listecellulevivante = genmere.verifierVoisinsretournecellulesvivantes();
@@ -200,7 +200,7 @@ public class Rules extends Liste{
         Liste listevoisinMort = genmere.verifierVoisinsretournelistedesvoisinsmorts()  ;
         Liste MortAVie = a.compare(listevoisinVivant, listevoisinMort);
         return listecellulevivante.concatener(MortAVie);
-    }*/
+    }
 
         /*public void comportementasymptotique() {
             Liste genmere, genfille;
@@ -213,7 +213,7 @@ public class Rules extends Liste{
             }
         }*/
 
-    public Liste Ressurection (Liste CelluleVivante, Liste voisinmort) {
+    public Liste Resurrection (Liste CelluleVivante, Liste voisinmort) {
         Liste CelluleMorteQuiPasseAVivant = new Liste();
         Maillon ref = voisinmort.tete;
         int nombreVoisins = 0;
