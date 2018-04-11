@@ -1,4 +1,4 @@
-public class Maillon<T>  implements Comparable<T>{
+public class Maillon<T >implements Comparable <Maillon<T>>{
 
 
     private T valeur;
@@ -14,7 +14,7 @@ public class Maillon<T>  implements Comparable<T>{
         this.suivant=null;
 
     }
-    public Maillon(T p, Maillon<T> m) {
+    public Maillon(T p, Maillon<T > m) {
         valeur = p;
         suivant = m;
     }
@@ -64,8 +64,10 @@ public class Maillon<T>  implements Comparable<T>{
         return true;
     }
 
-   @Override
-    public int compareTo(T o) {
-        return (this.compareTo(o));
+
+    @Override
+    public int compareTo(Maillon<T> o) {
+        
+        return (this.getValeur().compareTo(o.getValeur()));
     }
 }

@@ -1,6 +1,13 @@
 public class Principale {
     public static void main (String [] args){
-      /*Liste a = new Rules();
+       Rules a = new Rules();
+       Liste dep = new Liste();
+       dep.addInHead(new Paire(2,3,0));
+       dep.addTrier(new Paire(3,3,0));
+       dep.addTrier(new Paire(4,3, 0));
+       a.liste = dep;
+       System.out.print(a);
+        /*Liste a = new Rules();
         Liste listededepart = new Rules ();
         listededepart.addLast(new Paire(2, 3));
         listededepart.addTrier(new Paire(3, 3));
@@ -40,10 +47,6 @@ public class Principale {
         /*System.out.println(b.toString());*/
 
       //  System.out.println("peridoe :" +a.comportement_asymptotique());
-
-      Liste<Integer> i = new Liste<Integer>();
-      i.addInHead(1);
-      System.out.print(i);
 
 
     }

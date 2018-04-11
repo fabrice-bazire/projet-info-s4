@@ -1,4 +1,4 @@
-public class Liste<T> {
+public class Liste<T> extends Rules {
     Maillon<T> tete;
 
     public Liste() {
@@ -55,6 +55,17 @@ public class Liste<T> {
         }
     }
 
+    protected void addLast(T valeur) {
+
+        if (isEmpty()) {
+            tete = new Maillon<T>(valeur);
+        } else {
+            Maillon<T> dernier = getDernierElement();
+            dernier.setSuivant(new Maillon<T>(valeur));
+
+        }
+
+    }
 
     protected Maillon<T> getDernierElement(){
         Maillon<T> dernier=this.tete;
@@ -71,6 +82,20 @@ public class Liste<T> {
             ref=ref.getSuivant();
         }
         return longueur;
+
+    }
+
+    protected boolean contains(T valeur) {
+        boolean trouve = false;
+        Maillon<T> ref = getTete();
+        while (!trouve && ref != null) {
+            if (ref.getValeur().equals(valeur)) {
+                trouve = true;
+            } else {
+                ref = ref.getSuivant();
+            }
+        }
+        return trouve;
 
     }
 
@@ -125,16 +150,15 @@ public class Liste<T> {
         Maillon<T> prec = null;
         if (this.isEmpty())
             this.addInHead(p);
-        else if (ref.getValeur().compareTo(x.getValeur()) > 0)
+        else if ((ref.compareTo (x)) > 0) {
             this.addInHead(p);
-        else {
-            while (ref.getValeur().compareTo(x.getValeur()) <= 0 && ref != null) {
+            }else{
+                while (ref.compareTo(x) <= 0 && ref != null) {
+                    prec = ref;
+                    ref = ref.getSuivant();
 
-                prec = ref;
-                ref = ref.getSuivant();
-
+                }
             }
-
             if (ref == null)
                 this.addLast(p);
 
@@ -143,13 +167,12 @@ public class Liste<T> {
                 x.setSuivant(prec.getSuivant());
                 prec.setSuivant(x);
             }
-        }
+
             /*
             Maillon tmp = ref.getSuivant();
             ref.setSuivant(x);
             x.setSuivant(tmp);
             ref = ref.getSuivant();*/
-        System.out.println(this);
         return true;
 
               /* Paire a = ref.getValeur();

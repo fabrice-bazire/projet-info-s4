@@ -1,15 +1,15 @@
 
 import java.util.*;
 
-public class Paire implements Comparable<Paire> {
+public class Paire implements Comparable<Paire>{
     static Scanner in = new Scanner (System.in);
 
-    public int x, y, nombrevoisin;
+    public int x, y, nbv;
 
     public Paire(int x, int y, int voisins){
         this.x = x;
         this.y = y;
-        this.nombrevoisin = voisins;
+        this.nbv = voisins;
     }
 
     public Paire(){
@@ -19,7 +19,7 @@ public class Paire implements Comparable<Paire> {
         System.out.print("Entrez y : ");
         int y = in.nextInt();
         this.y = y;
-        this.nombrevoisin = 0;
+        this.nbv= 0;
     }
 
     @Override
@@ -49,7 +49,6 @@ public class Paire implements Comparable<Paire> {
     }
 
 
-    @Override
     public int compareTo(Paire p) {
         if (this.getx() < p.getx()){
             return -1 ;
