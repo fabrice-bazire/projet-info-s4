@@ -1,4 +1,4 @@
-public abstract class Liste<T> {
+public class Liste<T> extends Rules {
     Maillon<T> tete;
 
     public Liste() {
@@ -54,10 +54,18 @@ public abstract class Liste<T> {
             return true;
         }
     }
-    public abstract boolean addTrier(T p) ;
 
-    protected abstract void addLast(T p);
+    protected void addLast(T valeur) {
 
+        if (isEmpty()) {
+            tete = new Maillon<T>(valeur);
+        } else {
+            Maillon<T> dernier = getDernierElement();
+            dernier.setSuivant(new Maillon<T>(valeur));
+
+        }
+
+    }
 
     protected Maillon<T> getDernierElement(){
         Maillon<T> dernier=this.tete;
@@ -77,6 +85,20 @@ public abstract class Liste<T> {
 
     }
 
+    protected boolean contains(T valeur) {
+        boolean trouve = false;
+        Maillon<T> ref = getTete();
+        while (!trouve && ref != null) {
+            if (ref.getValeur().equals(valeur)) {
+                trouve = true;
+            } else {
+                ref = ref.getSuivant();
+            }
+        }
+        return trouve;
+
+    }
+
     public Liste<T> concatener(Liste<T> l2) {
         Maillon<T> ref = this.tete;
         if(this.isEmpty()){
@@ -90,7 +112,7 @@ public abstract class Liste<T> {
         }
         return this;
     }
-   public  void supplesdoublons (){
+  /* public  void supplesdoublons (){
         Liste<T> b = new Rules();
         Maillon<T> ref = this.tete;
         while(ref != null){
@@ -101,13 +123,7 @@ public abstract class Liste<T> {
         }
         this.tete = b.tete;
 
-    }
-
-    protected abstract boolean contains(T valeur);
-
-    protected abstract void addLast(Paire valeur);
-
-    protected abstract boolean contains(Paire valeur);
+    }*/
 
     public String toString(){
         String s = "Voici les coordonnées des cellules :\n";
@@ -128,15 +144,42 @@ public abstract class Liste<T> {
         return s;
     }
 
-    public abstract int comportement_asymptotique () ;
-    public abstract Liste<T> verifierVoisinsretournecellulesvivantes();
-    public abstract Liste<T> verifierVoisinsretournelistedesvoisinsvivants();
-    public abstract Liste<T> verifierVoisinsretournelistedesvoisinsmorts();
-    public abstract int NombreVoisin(Liste<T> l, T p);
-    public abstract Liste<T> resurrection (Liste<T> CelluleVivante, Liste<T> voisinmort) ;
-    public abstract Liste<T> newgeneration ();
+    public boolean addTrier(T p) {
+        Maillon<T> x = new Maillon<T>(p);
+        Maillon<T> ref = this.tete;
+        Maillon<T> prec = null;
+        if (this.isEmpty())
+            this.addInHead(p);
+        else if ((ref.compareTo (x)) > 0) {
+            this.addInHead(p);
+            }else{
+                while (ref.compareTo(x) <= 0 && ref != null) {
+                    prec = ref;
+                    ref = ref.getSuivant();
 
+                }
+            }
+            if (ref == null)
+                this.addLast(p);
 
+            else {
+
+                x.setSuivant(prec.getSuivant());
+                prec.setSuivant(x);
+            }
+
+            /*
+            Maillon tmp = ref.getSuivant();
+            ref.setSuivant(x);
+            x.setSuivant(tmp);
+            ref = ref.getSuivant();*/
+        return true;
+
+              /* Paire a = ref.getValeur();
+                ref.setValeur(x.getValeur());
+                ref.getSuivant().setValeur(a);*/
+
+    }
 
 
 }

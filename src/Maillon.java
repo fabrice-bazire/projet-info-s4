@@ -1,17 +1,20 @@
-public class Maillon<T> {
+public class Maillon<T >implements Comparable <Maillon<T>>{
 
 
     private T valeur;
     private Maillon<T> suivant;
 
-
+     public Maillon (){
+        this.valeur = null;
+        this.suivant = null;
+     }
 
     public Maillon (T p) {
         this.valeur=p;
         this.suivant=null;
 
     }
-    public Maillon(T p, Maillon<T> m) {
+    public Maillon(T p, Maillon<T > m) {
         valeur = p;
         suivant = m;
     }
@@ -59,5 +62,12 @@ public class Maillon<T> {
         } else if (!valeur.equals(other.valeur))
             return false;
         return true;
+    }
+
+
+    @Override
+    public int compareTo(Maillon<T> o) {
+        
+        return (this.getValeur().compareTo(o.getValeur()));
     }
 }
