@@ -1,4 +1,4 @@
-public class Liste<T> extends Rules {
+public class Liste<T extends Comparable> extends Rules {
     Maillon<T> tete;
 
     public Liste() {
@@ -152,13 +152,13 @@ public class Liste<T> extends Rules {
             this.addInHead(p);
         else if ((ref.compareTo (x)) > 0) {
             this.addInHead(p);
-            }else{
-                while (ref.compareTo(x) <= 0 && ref != null) {
-                    prec = ref;
-                    ref = ref.getSuivant();
+        }else {
+            while (ref != null && ref.compareTo(x) <= 0) {
+                prec = ref;
+                ref = ref.getSuivant();
 
-                }
             }
+
             if (ref == null)
                 this.addLast(p);
 
@@ -167,7 +167,7 @@ public class Liste<T> extends Rules {
                 x.setSuivant(prec.getSuivant());
                 prec.setSuivant(x);
             }
-
+        }
             /*
             Maillon tmp = ref.getSuivant();
             ref.setSuivant(x);

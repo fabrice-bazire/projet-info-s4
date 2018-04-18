@@ -1,4 +1,4 @@
-public class Maillon<T >implements Comparable <Maillon<T>>{
+public class Maillon<T extends Comparable> implements Comparable<Maillon>{
 
 
     private T valeur;
@@ -34,9 +34,7 @@ public class Maillon<T >implements Comparable <Maillon<T>>{
     public void setSuivant(Maillon<T> suivant) {
         this.suivant = suivant;
     }
-    /* (non-Javadoc)
-     * @see java.lang.Object#hashCode()
-     */
+
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -44,9 +42,8 @@ public class Maillon<T >implements Comparable <Maillon<T>>{
         result = prime * result + ((valeur == null) ? 0 : valeur.hashCode());
         return result;
     }
-    /* (non-Javadoc)
-     * @see java.lang.Object#equals(java.lang.Object)
-     */
+
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
@@ -66,8 +63,7 @@ public class Maillon<T >implements Comparable <Maillon<T>>{
 
 
     @Override
-    public int compareTo(Maillon<T> o) {
-        
+    public int compareTo(Maillon o) {
         return (this.getValeur().compareTo(o.getValeur()));
     }
 }

@@ -63,7 +63,6 @@ public class Paire implements Comparable<Paire>{
             if (this.gety() > p.gety()){
                 return 1 ;
             }
-
         }
         return 0;
     }
