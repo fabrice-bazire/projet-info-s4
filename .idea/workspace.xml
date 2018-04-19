@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8907bfa-5b60-4a60-8247-0ae306c57d12" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-info-s4/Rules.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-info-s4/Rules.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Liste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Liste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Principale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principale.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Rules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rules.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,42 +37,47 @@
       <file leaf-file-name="Liste.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Liste.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="169" column="9" selection-start-line="169" selection-start-column="9" selection-end-line="169" selection-end-column="9" />
+            <state relative-caret-position="208">
+              <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
               <folding>
                 <element signature="method#identique#0;class#Liste#0" />
                 <element signature="method#addInHead#0;class#Liste#0" />
-                <element signature="method#addAfter#0;class#Liste#0" />
                 <element signature="method#addLast#0;class#Liste#0" />
                 <element signature="method#getDernierElement#0;class#Liste#0" />
                 <element signature="method#taille#0;class#Liste#0" />
                 <element signature="method#contains#0;class#Liste#0" />
                 <element signature="method#concatener#0;class#Liste#0" />
+                <element signature="method#supplesdoublons#0;class#Liste#0" />
                 <element signature="method#toString#0;class#Liste#0" />
+                <element signature="method#addTrier#0;class#Liste#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Principale.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Principale.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Principale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+            <state relative-caret-position="508">
+              <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rules.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Rules.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Rules.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="59" column="44" lean-forward="true" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
+            <state relative-caret-position="210">
+              <caret line="195" column="5" selection-start-line="195" selection-start-column="5" selection-end-line="195" selection-end-column="5" />
               <folding>
                 <element signature="method#NombreVoisin#0;class#Rules#0" />
                 <element signature="method#verifierVoisinsretournecellulesvivantes#0;class#Rules#0" />
-                <element signature="method#verifierVoisinsretournelistedesvoisinsvivants#0;class#Rules#0" />
-                <element signature="method#verifierVoisinsretournelistedesvoisinsmorts#0;class#Rules#0" />
+                <element signature="method#mortedevenantvivantes#0;class#Rules#0" />
+                <element signature="method#vivantsquirestentvivants#0;class#Rules#0" />
+                <element signature="method#newgeneration#0;class#Rules#0" />
+                <element signature="method#comportement_asymptotique#0;class#Rules#0" />
+                <element signature="method#resurrection#0;class#Rules#0" />
+                <element signature="method#retournetouslesvoisinsmorts#0;class#Rules#0" />
               </folding>
             </state>
           </provider>
@@ -92,10 +97,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Maillon.java" />
-        <option value="$PROJECT_DIR$/src/Liste.java" />
         <option value="$PROJECT_DIR$/src/Paire.java" />
-        <option value="$PROJECT_DIR$/src/Principale.java" />
+        <option value="$PROJECT_DIR$/src/Liste.java" />
         <option value="$PROJECT_DIR$/src/Rules.java" />
+        <option value="$PROJECT_DIR$/src/Principale.java" />
       </list>
     </option>
   </component>
@@ -129,6 +134,9 @@
       </pane>
       <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -220,12 +228,12 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3292683" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3401084" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24305555" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16319445" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -245,7 +253,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="13" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -270,13 +278,14 @@
           <folding>
             <element signature="method#identique#0;class#Liste#0" />
             <element signature="method#addInHead#0;class#Liste#0" />
-            <element signature="method#addAfter#0;class#Liste#0" />
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
             <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
+            <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
+            <element signature="method#addTrier#0;class#Liste#0" />
           </folding>
         </state>
       </provider>
@@ -295,8 +304,12 @@
           <folding>
             <element signature="method#NombreVoisin#0;class#Rules#0" />
             <element signature="method#verifierVoisinsretournecellulesvivantes#0;class#Rules#0" />
-            <element signature="method#verifierVoisinsretournelistedesvoisinsvivants#0;class#Rules#0" />
-            <element signature="method#verifierVoisinsretournelistedesvoisinsmorts#0;class#Rules#0" />
+            <element signature="method#mortedevenantvivantes#0;class#Rules#0" />
+            <element signature="method#vivantsquirestentvivants#0;class#Rules#0" />
+            <element signature="method#newgeneration#0;class#Rules#0" />
+            <element signature="method#comportement_asymptotique#0;class#Rules#0" />
+            <element signature="method#resurrection#0;class#Rules#0" />
+            <element signature="method#retournetouslesvoisinsmorts#0;class#Rules#0" />
           </folding>
         </state>
       </provider>
@@ -322,13 +335,14 @@
           <folding>
             <element signature="method#identique#0;class#Liste#0" />
             <element signature="method#addInHead#0;class#Liste#0" />
-            <element signature="method#addAfter#0;class#Liste#0" />
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
             <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
+            <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
+            <element signature="method#addTrier#0;class#Liste#0" />
           </folding>
         </state>
       </provider>
@@ -347,8 +361,12 @@
           <folding>
             <element signature="method#NombreVoisin#0;class#Rules#0" />
             <element signature="method#verifierVoisinsretournecellulesvivantes#0;class#Rules#0" />
-            <element signature="method#verifierVoisinsretournelistedesvoisinsvivants#0;class#Rules#0" />
-            <element signature="method#verifierVoisinsretournelistedesvoisinsmorts#0;class#Rules#0" />
+            <element signature="method#mortedevenantvivantes#0;class#Rules#0" />
+            <element signature="method#vivantsquirestentvivants#0;class#Rules#0" />
+            <element signature="method#newgeneration#0;class#Rules#0" />
+            <element signature="method#comportement_asymptotique#0;class#Rules#0" />
+            <element signature="method#resurrection#0;class#Rules#0" />
+            <element signature="method#retournetouslesvoisinsmorts#0;class#Rules#0" />
           </folding>
         </state>
       </provider>
@@ -374,13 +392,14 @@
           <folding>
             <element signature="method#identique#0;class#Liste#0" />
             <element signature="method#addInHead#0;class#Liste#0" />
-            <element signature="method#addAfter#0;class#Liste#0" />
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
             <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
+            <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
+            <element signature="method#addTrier#0;class#Liste#0" />
           </folding>
         </state>
       </provider>
@@ -399,8 +418,12 @@
           <folding>
             <element signature="method#NombreVoisin#0;class#Rules#0" />
             <element signature="method#verifierVoisinsretournecellulesvivantes#0;class#Rules#0" />
-            <element signature="method#verifierVoisinsretournelistedesvoisinsvivants#0;class#Rules#0" />
-            <element signature="method#verifierVoisinsretournelistedesvoisinsmorts#0;class#Rules#0" />
+            <element signature="method#mortedevenantvivantes#0;class#Rules#0" />
+            <element signature="method#vivantsquirestentvivants#0;class#Rules#0" />
+            <element signature="method#newgeneration#0;class#Rules#0" />
+            <element signature="method#comportement_asymptotique#0;class#Rules#0" />
+            <element signature="method#resurrection#0;class#Rules#0" />
+            <element signature="method#retournetouslesvoisinsmorts#0;class#Rules#0" />
           </folding>
         </state>
       </provider>
@@ -428,39 +451,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Liste.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="169" column="9" selection-start-line="169" selection-start-column="9" selection-end-line="169" selection-end-column="9" />
+        <state relative-caret-position="208">
+          <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
           <folding>
             <element signature="method#identique#0;class#Liste#0" />
             <element signature="method#addInHead#0;class#Liste#0" />
-            <element signature="method#addAfter#0;class#Liste#0" />
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
             <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
+            <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
+            <element signature="method#addTrier#0;class#Liste#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="195" column="5" selection-start-line="195" selection-start-column="5" selection-end-line="195" selection-end-column="5" />
+          <folding>
+            <element signature="method#NombreVoisin#0;class#Rules#0" />
+            <element signature="method#verifierVoisinsretournecellulesvivantes#0;class#Rules#0" />
+            <element signature="method#mortedevenantvivantes#0;class#Rules#0" />
+            <element signature="method#vivantsquirestentvivants#0;class#Rules#0" />
+            <element signature="method#newgeneration#0;class#Rules#0" />
+            <element signature="method#comportement_asymptotique#0;class#Rules#0" />
+            <element signature="method#resurrection#0;class#Rules#0" />
+            <element signature="method#retournetouslesvoisinsmorts#0;class#Rules#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rules.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="59" column="44" lean-forward="true" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
-          <folding>
-            <element signature="method#NombreVoisin#0;class#Rules#0" />
-            <element signature="method#verifierVoisinsretournecellulesvivantes#0;class#Rules#0" />
-            <element signature="method#verifierVoisinsretournelistedesvoisinsvivants#0;class#Rules#0" />
-            <element signature="method#verifierVoisinsretournelistedesvoisinsmorts#0;class#Rules#0" />
-          </folding>
+        <state relative-caret-position="508">
+          <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
         </state>
       </provider>
     </entry>

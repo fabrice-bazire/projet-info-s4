@@ -4,18 +4,23 @@ public class Liste<T extends Comparable> extends Rules {
     public Liste() {
         this.tete = null;
     }
+
     public Liste (Maillon<T> tete) {
         this.tete = tete;
     }
+
     public Maillon<T> getTete() {
         return this.tete;
     }
+
     public void setTete(Maillon<T> tete) {
         this.tete = tete;
     }
+
     public boolean isEmpty() {
         return (this.tete == null);
     }
+
     public boolean identique (Liste<T> l){
         Maillon<T> ref = this.tete;
         Maillon<T> ref1 = l.tete;
@@ -38,21 +43,10 @@ public class Liste<T extends Comparable> extends Rules {
 
         return true;
     }
+
     public void addInHead(T p) {
         Maillon<T> ancienneTete = this.tete;
         tete = new Maillon<T>(p, ancienneTete);
-    }
-
-    public boolean addAfter(T p, Maillon<T> m) {
-        if (m.getSuivant() == null) {
-            return false;
-        } else {
-            Maillon<T> l = m.getSuivant();
-            Maillon<T> x = new Maillon<T>(p);
-            m.setSuivant(x);
-            x.setSuivant(l);
-            return true;
-        }
     }
 
     protected void addLast(T valeur) {
@@ -74,6 +68,7 @@ public class Liste<T extends Comparable> extends Rules {
         }
         return dernier;
     }
+
     public int taille(){
         int longueur=0;
         Maillon<T> ref = getTete();
@@ -112,8 +107,9 @@ public class Liste<T extends Comparable> extends Rules {
         }
         return this;
     }
-  /* public  void supplesdoublons (){
-        Liste<T> b = new Rules();
+
+    public  void supplesdoublons (){
+        Liste<T> b = new Liste<T>();
         Maillon<T> ref = this.tete;
         while(ref != null){
             if (!b.contains(ref.getValeur())) {
@@ -122,8 +118,7 @@ public class Liste<T extends Comparable> extends Rules {
             ref = ref.getSuivant();
         }
         this.tete = b.tete;
-
-    }*/
+    }
 
     public String toString(){
         String s = "Voici les coordonnées des cellules :\n";
@@ -180,6 +175,4 @@ public class Liste<T extends Comparable> extends Rules {
                 ref.getSuivant().setValeur(a);*/
 
     }
-
-
 }
