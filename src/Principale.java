@@ -1,7 +1,7 @@
 public class Principale {
 
     public static char [][] grille (Liste l){
-        char  grille [][] = new char [10][10];
+        char  grille [][] = new char [30][30];
         for (int i = 0; i<grille.length; i++){
             for (int j = 0; j<grille[1].length; j++){
                 grille[i][j] = ' ';
@@ -16,7 +16,7 @@ public class Principale {
     }
 
     public static void aff_grille (char [][] grille){
-        System.out.println("     1   2   3   4   5   6   7   8   9   10");
+        System.out.println("     1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30");
         for (int i = 0; i<grille.length; i++) {
             if (i < 9){
                 System.out.print(i+1 + " ");
@@ -34,32 +34,46 @@ public class Principale {
     public static void main (String [] args){
        Rules a = new Rules();
        Liste dep = new Liste();
-       dep.addTrier(new Paire(4,3, 0));
-       dep.addTrier(new Paire(2,3,0));
-       dep.addTrier(new Paire(3,3,0));
-       dep.addTrier(new Paire(3,7,0));
-        dep.addTrier(new Paire(3,8,0));
-        dep.addTrier(new Paire(4,7,0));
-        dep.addTrier(new Paire(4,8,0));
-        dep.addTrier(new Paire(8,3,0));
-        dep.addTrier(new Paire(9,3,0));
-        dep.addTrier(new Paire(10,3,0));
-        dep.addTrier(new Paire(8,4,0));
-        dep.addTrier(new Paire(8,5,0));
-        dep.addTrier(new Paire(9,5,0));
-        dep.addTrier(new Paire(10,5,0));
+       dep.addTrier(new Paire(11,10, 0));
+       dep.addTrier(new Paire(12,9,0));
+       dep.addTrier(new Paire(13,9,0));
+       dep.addTrier(new Paire(14,9,0));
+        dep.addTrier(new Paire(11,11,0));
+        dep.addTrier(new Paire(15,10,0));
+        dep.addTrier(new Paire(15,11,0));
+        dep.addTrier(new Paire(12,12,0));
+        dep.addTrier(new Paire(13,12,0));
+        dep.addTrier(new Paire(14,12,0));
+        dep.addTrier(new Paire(11,18, 0));
+        dep.addTrier(new Paire(12,17,0));
+        dep.addTrier(new Paire(13,17,0));
+        dep.addTrier(new Paire(14,17,0));
+        dep.addTrier(new Paire(11,19,0));
+        dep.addTrier(new Paire(15,18,0));
+        dep.addTrier(new Paire(15,19,0));
+        dep.addTrier(new Paire(12,20,0));
+        dep.addTrier(new Paire(13,20,0));
+        dep.addTrier(new Paire(14,20,0));
        a.liste = dep;
-       //System.out.print(dep);
+       /*System.out.print(dep);
        aff_grille(grille(a.liste));
-        System.out.println(" ");
-       a.liste = a.newgeneration();
+       System.out.println(" ");
+       a.liste = a.newgeneration(a.liste);
+       a.liste = a.newgeneration(a.liste);
        aff_grille(grille(a.liste));
-        System.out.println(" ");
-        a.liste = a.newgeneration();
-        aff_grille(grille(a.liste));
-        System.out.println(" ");
-        a.liste = a.newgeneration();
-        aff_grille(grille(a.liste));
+       System.out.println(" ");
+       a.liste = a.newgeneration(a.liste);
+       aff_grille(grille(a.liste));
+       System.out.println(" ");
+       a.liste = a.newgeneration(a.liste);
+       aff_grille(grille(a.liste));*/
+        Rules b = new Rules();
+        Liste d = new Liste();
+        d.addTrier(new Paire(2,3, 0));
+        d.addTrier(new Paire(3,3,0));
+        d.addTrier(new Paire(4,3,0));
+        b.liste = d;
+       System.out.println("periode : " + a.comportement_asymptotique(a.liste));
        // aff_grille(grille(a.retournetouslesvoisinsmorts(dep)));
     }
 }

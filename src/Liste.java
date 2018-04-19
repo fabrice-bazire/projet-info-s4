@@ -24,24 +24,19 @@ public class Liste<T extends Comparable> extends Rules {
     public boolean identique (Liste<T> l){
         Maillon<T> ref = this.tete;
         Maillon<T> ref1 = l.tete;
-
         if (this.taille() != l.taille() || this.isEmpty() || l.isEmpty()){
             return false;
-
-        }
-        while (ref.getSuivant() != null) {
-            if (ref.getValeur().equals(ref1.getValeur())) {
-                ref = ref.getSuivant();
-                ref1 = ref1.getSuivant();
-
-            } else {
-                return false;
-
+        }else {
+            while (ref.getSuivant() != null) {
+                if (ref.getValeur().equals(ref1.getValeur())) {
+                    ref = ref.getSuivant();
+                    ref1 = ref1.getSuivant();
+                } else {
+                    return false;
+                }
             }
+            return true;
         }
-
-
-        return true;
     }
 
     public void addInHead(T p) {
