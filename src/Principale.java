@@ -37,10 +37,29 @@ public class Principale {
        dep.addTrier(new Paire(4,3, 0));
        dep.addTrier(new Paire(2,3,0));
        dep.addTrier(new Paire(3,3,0));
+       dep.addTrier(new Paire(3,7,0));
+        dep.addTrier(new Paire(3,8,0));
+        dep.addTrier(new Paire(4,7,0));
+        dep.addTrier(new Paire(4,8,0));
+        dep.addTrier(new Paire(8,3,0));
+        dep.addTrier(new Paire(9,3,0));
+        dep.addTrier(new Paire(10,3,0));
+        dep.addTrier(new Paire(8,4,0));
+        dep.addTrier(new Paire(8,5,0));
+        dep.addTrier(new Paire(9,5,0));
+        dep.addTrier(new Paire(10,5,0));
        a.liste = dep;
        //System.out.print(dep);
        aff_grille(grille(a.liste));
-       a.newgeneration();
+        System.out.println(" ");
+       a.liste = a.newgeneration();
        aff_grille(grille(a.liste));
+        System.out.println(" ");
+        a.liste = a.newgeneration();
+        aff_grille(grille(a.liste));
+        System.out.println(" ");
+        a.liste = a.newgeneration();
+        aff_grille(grille(a.liste));
+       // aff_grille(grille(a.retournetouslesvoisinsmorts(dep)));
     }
 }
