@@ -46,35 +46,34 @@ public class Rules {
             if (t.contains(p1)) {
                 ref.getValeur().nbv++;
             }
-
             Paire p2 = new Paire(ref.getValeur().getx(), ref.getValeur().gety() + 1, 0);
-            if (this.liste.contains(p2)) {
+            if (t.contains(p2)) {
                 ref.getValeur().nbv++;
             }
             Paire p3 = new Paire(ref.getValeur().getx() + 1, ref.getValeur().gety() + 1, 0);
-            if (this.liste.contains(p3)) {
+            if (t.contains(p3)) {
                 ref.getValeur().nbv++;
             }
 
             Paire p4 = new Paire(ref.getValeur().getx() - 1, ref.getValeur().gety(), 0);
-            if (this.liste.contains(p4)) {
+            if (t.contains(p4)) {
                 ref.getValeur().nbv++;
             }
             Paire p5 = new Paire(ref.getValeur().getx() + 1, ref.getValeur().gety(), 0);
-            if (this.liste.contains(p5)) {
+            if (t.contains(p5)) {
                 ref.getValeur().nbv++;
             }
 
             Paire p6 = new Paire(ref.getValeur().getx() - 1, ref.getValeur().gety() - 1, 0);
-            if (this.liste.contains(p6)) {
+            if (t.contains(p6)) {
                 ref.getValeur().nbv++;
             }
             Paire p7 = new Paire(ref.getValeur().getx(), ref.getValeur().gety() - 1, 0);
-            if (this.liste.contains(p7)) {
+            if (t.contains(p7)) {
                 ref.getValeur().nbv++;
             }
             Paire p8 = new Paire(ref.getValeur().getx() + 1, ref.getValeur().gety() - 1, 0);
-            if (this.liste.contains(p8)) {
+            if (t.contains(p8)) {
                 ref.getValeur().nbv++;
             }
             if (ref.getValeur().nbv == 2 || ref.getValeur().nbv == 3) {
@@ -167,29 +166,28 @@ public class Rules {
         return lesvoisinsvivants;
     }
 
-    public Liste newgeneration() {
+    public Liste newgeneration(Liste t) {
         Liste  a = new Liste() ;
-        Liste genmere = this.liste;
-        Liste listecellulevivante = verifierVoisinsretournecellulesvivantes(genmere);
-        Liste listevoisinVivant = mortedevenantvivantes(genmere);
-        Liste listevoisinMort = vivantsquirestentvivants(genmere);
+        Liste listecellulevivante = verifierVoisinsretournecellulesvivantes(t);
+        Liste listevoisinVivant = mortedevenantvivantes(t);
+        Liste listevoisinMort = vivantsquirestentvivants(t);
         return listevoisinVivant.concatener((listevoisinMort));
     }
 
     public int comportement_asymptotique(Liste t) {
-        Liste genmere;
-        Liste genfille, genrecherche;
+        Liste initiale;
+        Liste suivante;
         int periode = 0;
-        genmere = t;
-        genfille = genmere.newgeneration();
+        initiale = t;
+        suivante = initiale.newgeneration(t);
         boolean sameconfig = false;
         while (!sameconfig) {
             periode++;
-            genmere = genmere.newgeneration();
-            genfille = genfille.newgeneration();
-            if (genmere.identique(genfille)) {
+            initiale = initiale.newgeneration(initiale);
+            suivante = suivante.newgeneration(suivante);
+            suivante = suivante.newgeneration(suivante);
+            if (initiale.identique(suivante)) {
                 sameconfig = true;
-                genrecherche = genfille;
             }
         }
         return periode;
