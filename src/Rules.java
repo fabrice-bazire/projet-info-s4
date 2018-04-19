@@ -57,10 +57,9 @@ public class Rules {
         return p.nbv;
     }
 
-    public Liste verifierVoisinsretournecellulesvivantes() {
+    public Liste verifierVoisinsretournecellulesvivantes(Liste t) {
         Liste cellulesvivantes = new Liste();
-        Liste t = this.liste;
-        Maillon<Paire> ref = this.liste.tete;
+        Maillon<Paire> ref = t.tete;
         while (ref != null) {
             Paire p1 = new Paire(ref.getValeur().getx() - 1, ref.getValeur().gety() + 1, 0);
             if (t.contains(p1)) {
@@ -113,9 +112,9 @@ public class Rules {
         return cellulesvivantes;
     }
 
-    public Liste verifierVoisinsretournelistedesvoisinsvivants() {
+    public Liste verifierVoisinsretournelistedesvoisinsvivants(Liste t) {
         Liste lesvoisinsvivants = new Liste();
-        Maillon<Paire> ref = this.liste.tete;
+        Maillon<Paire> ref = t.tete;
         while (ref != null) {
             Paire p1 = new Paire(ref.getValeur().getx() - 1, ref.getValeur().gety() + 1, 0);
             if (this.liste.contains(p1)) {
@@ -155,9 +154,9 @@ public class Rules {
         return lesvoisinsvivants;
     }
 
-    public Liste verifierVoisinsretournelistedesvoisinsmorts() {
+    public Liste verifierVoisinsretournelistedesvoisinsmorts(Liste t) {
         Liste lesvoisinsmorts = new Liste();
-        Maillon<Paire> ref = this.liste.tete;
+        Maillon<Paire> ref = t.tete;
         while (ref != null) {
             Paire p1 = new Paire(ref.getValeur().getx() - 1, ref.getValeur().gety() + 1, 0);
             if (!this.liste.contains(p1)) {
@@ -200,9 +199,10 @@ public class Rules {
     public Liste newgeneration() {
         Liste  a = new Liste() ;
         Liste genmere = this.liste;
-        Liste listecellulevivante = genmere.verifierVoisinsretournecellulesvivantes();
-        Liste listevoisinVivant = genmere.verifierVoisinsretournelistedesvoisinsvivants();
-        Liste listevoisinMort = genmere.verifierVoisinsretournelistedesvoisinsmorts();
+        System.out.print("genmere : " + genmere.toString());
+        Liste listecellulevivante = verifierVoisinsretournecellulesvivantes(genmere);
+        Liste listevoisinVivant = verifierVoisinsretournelistedesvoisinsvivants(genmere);
+        Liste listevoisinMort = verifierVoisinsretournelistedesvoisinsmorts(genmere);
         Liste MortAVie = a.resurrection(listevoisinVivant, listevoisinMort);
         return listecellulevivante.concatener(MortAVie);
     }
