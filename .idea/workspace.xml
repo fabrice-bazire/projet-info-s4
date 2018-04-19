@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f8907bfa-5b60-4a60-8247-0ae306c57d12" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Principale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projet-info-s4/Rules.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-info-s4/Rules.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Rules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rules.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,7 +19,7 @@
       <file leaf-file-name="Paire.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Paire.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="762">
+            <state relative-caret-position="870">
               <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
             </state>
           </provider>
@@ -37,7 +37,7 @@
       <file leaf-file-name="Liste.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Liste.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
+            <state relative-caret-position="650">
               <caret line="169" column="9" selection-start-line="169" selection-start-column="9" selection-end-line="169" selection-end-column="9" />
               <folding>
                 <element signature="method#identique#0;class#Liste#0" />
@@ -57,7 +57,7 @@
       <file leaf-file-name="Principale.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Principale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
+            <state relative-caret-position="313">
               <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
             </state>
           </provider>
@@ -66,8 +66,8 @@
       <file leaf-file-name="Rules.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Rules.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="204" column="83" selection-start-line="204" selection-start-column="83" selection-end-line="204" selection-end-column="83" />
+            <state relative-caret-position="146">
+              <caret line="59" column="44" lean-forward="true" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
               <folding>
                 <element signature="method#NombreVoisin#0;class#Rules#0" />
                 <element signature="method#verifierVoisinsretournecellulesvivantes#0;class#Rules#0" />
@@ -110,6 +110,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,7 +128,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -220,7 +220,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3292683" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3292683" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
@@ -245,10 +245,62 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Paire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maillon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Liste.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="169" column="9" selection-start-line="169" selection-start-column="9" selection-end-line="169" selection-end-column="9" />
+          <folding>
+            <element signature="method#identique#0;class#Liste#0" />
+            <element signature="method#addInHead#0;class#Liste#0" />
+            <element signature="method#addAfter#0;class#Liste#0" />
+            <element signature="method#addLast#0;class#Liste#0" />
+            <element signature="method#getDernierElement#0;class#Liste#0" />
+            <element signature="method#taille#0;class#Liste#0" />
+            <element signature="method#contains#0;class#Liste#0" />
+            <element signature="method#concatener#0;class#Liste#0" />
+            <element signature="method#toString#0;class#Liste#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="204" column="83" selection-start-line="204" selection-start-column="83" selection-end-line="204" selection-end-column="83" />
+          <folding>
+            <element signature="method#NombreVoisin#0;class#Rules#0" />
+            <element signature="method#verifierVoisinsretournecellulesvivantes#0;class#Rules#0" />
+            <element signature="method#verifierVoisinsretournelistedesvoisinsvivants#0;class#Rules#0" />
+            <element signature="method#verifierVoisinsretournelistedesvoisinsmorts#0;class#Rules#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Paire.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
@@ -367,9 +419,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Paire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Liste.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
+        <state relative-caret-position="650">
           <caret line="169" column="9" selection-start-line="169" selection-start-column="9" selection-end-line="169" selection-end-column="9" />
           <folding>
             <element signature="method#identique#0;class#Liste#0" />
@@ -385,24 +444,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Paire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="762">
-          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
+        <state relative-caret-position="313">
           <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Rules.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="204" column="83" selection-start-line="204" selection-start-column="83" selection-end-line="204" selection-end-column="83" />
+        <state relative-caret-position="146">
+          <caret line="59" column="44" lean-forward="true" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
           <folding>
             <element signature="method#NombreVoisin#0;class#Rules#0" />
             <element signature="method#verifierVoisinsretournecellulesvivantes#0;class#Rules#0" />
