@@ -34,28 +34,13 @@ public class Principale {
     public static void main (String [] args){
        Rules a = new Rules();
        Liste dep = new Liste();
-       dep.addTrier(new Paire(11,10, 0));
-       dep.addTrier(new Paire(12,9,0));
-       dep.addTrier(new Paire(13,9,0));
-       dep.addTrier(new Paire(14,9,0));
-        dep.addTrier(new Paire(11,11,0));
-        dep.addTrier(new Paire(15,10,0));
-        dep.addTrier(new Paire(15,11,0));
-        dep.addTrier(new Paire(12,12,0));
-        dep.addTrier(new Paire(13,12,0));
-        dep.addTrier(new Paire(14,12,0));
-        dep.addTrier(new Paire(11,18, 0));
-        dep.addTrier(new Paire(12,17,0));
-        dep.addTrier(new Paire(13,17,0));
-        dep.addTrier(new Paire(14,17,0));
-        dep.addTrier(new Paire(11,19,0));
-        dep.addTrier(new Paire(15,18,0));
-        dep.addTrier(new Paire(15,19,0));
-        dep.addTrier(new Paire(12,20,0));
-        dep.addTrier(new Paire(13,20,0));
-        dep.addTrier(new Paire(14,20,0));
+       dep.addTrier(new Paire(14,15, 0));
+       dep.addTrier(new Paire(15,14,0));
+       dep.addTrier(new Paire(16,14,0));
+       dep.addTrier(new Paire(16,15,0));
+       dep.addTrier(new Paire(16,16,0));
        a.liste = dep;
-       /*System.out.print(dep);
+       System.out.print(dep);
        aff_grille(grille(a.liste));
        System.out.println(" ");
        a.liste = a.newgeneration(a.liste);
@@ -66,14 +51,14 @@ public class Principale {
        aff_grille(grille(a.liste));
        System.out.println(" ");
        a.liste = a.newgeneration(a.liste);
-       aff_grille(grille(a.liste));*/
-        Rules b = new Rules();
-        Liste d = new Liste();
-        d.addTrier(new Paire(2,3, 0));
-        d.addTrier(new Paire(3,3,0));
-        d.addTrier(new Paire(4,3,0));
-        b.liste = d;
-       System.out.println("periode : " + a.comportement_asymptotique(a.liste));
+       aff_grille(grille(a.liste));
+       Rules b = new Rules();
+       Liste d = new Liste();
+       d.addTrier(new Paire(2,3, 0));
+       d.addTrier(new Paire(3,3,0));
+       d.addTrier(new Paire(4,3,0));
+       b.liste = d;
+       //System.out.println("periode : " + a.comportement_asymptotique(a.liste));
        // aff_grille(grille(a.retournetouslesvoisinsmorts(dep)));
     }
 }

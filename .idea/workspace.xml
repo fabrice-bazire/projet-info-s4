@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8907bfa-5b60-4a60-8247-0ae306c57d12" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-info-s4/Liste.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-info-s4/Liste.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-info-s4/Principale.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-info-s4/Principale.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-info-s4/Rules.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-info-s4/Rules.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Liste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Liste.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Principale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rules.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,7 +35,7 @@
       <file leaf-file-name="Liste.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Liste.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-113">
+            <state relative-caret-position="195">
               <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
               <folding>
                 <element signature="method#identique#0;class#Liste#0" />
@@ -59,20 +53,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Principale.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Principale.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Principale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="75" column="70" selection-start-line="75" selection-start-column="70" selection-end-line="75" selection-end-column="70" />
+            <state relative-caret-position="238">
+              <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rules.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Rules.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Rules.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="182" column="35" lean-forward="true" selection-start-line="182" selection-start-column="35" selection-end-line="182" selection-end-column="35" />
+              <caret line="182" column="35" selection-start-line="182" selection-start-column="35" selection-end-line="182" selection-end-column="35" />
               <folding>
                 <element signature="method#NombreVoisin#0;class#Rules#0" />
                 <element signature="method#verifierVoisinsretournecellulesvivantes#0;class#Rules#0" />
@@ -102,14 +96,15 @@
         <option value="$PROJECT_DIR$/src/Maillon.java" />
         <option value="$PROJECT_DIR$/src/Paire.java" />
         <option value="$PROJECT_DIR$/src/Liste.java" />
-        <option value="$PROJECT_DIR$/src/Principale.java" />
         <option value="$PROJECT_DIR$/src/Rules.java" />
+        <option value="$PROJECT_DIR$/src/Principale.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="462" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
+    <option name="width" value="978" />
     <option name="height" value="812" />
   </component>
   <component name="ProjectView">
@@ -117,6 +112,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -133,7 +129,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
@@ -220,7 +215,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="812" extended-state="0" />
+    <frame x="462" y="23" width="978" height="812" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -235,7 +230,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16319445" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2402863" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -259,6 +254,62 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Paire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maillon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Liste.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+          <folding>
+            <element signature="method#identique#0;class#Liste#0" />
+            <element signature="method#addInHead#0;class#Liste#0" />
+            <element signature="method#addLast#0;class#Liste#0" />
+            <element signature="method#getDernierElement#0;class#Liste#0" />
+            <element signature="method#taille#0;class#Liste#0" />
+            <element signature="method#contains#0;class#Liste#0" />
+            <element signature="method#concatener#0;class#Liste#0" />
+            <element signature="method#supplesdoublons#0;class#Liste#0" />
+            <element signature="method#toString#0;class#Liste#0" />
+            <element signature="method#addTrier#0;class#Liste#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="182" column="35" lean-forward="true" selection-start-line="182" selection-start-column="35" selection-end-line="182" selection-end-column="35" />
+          <folding>
+            <element signature="method#NombreVoisin#0;class#Rules#0" />
+            <element signature="method#verifierVoisinsretournecellulesvivantes#0;class#Rules#0" />
+            <element signature="method#mortedevenantvivantes#0;class#Rules#0" />
+            <element signature="method#vivantsquirestentvivants#0;class#Rules#0" />
+            <element signature="method#newgeneration#0;class#Rules#0" />
+            <element signature="method#resurrection#0;class#Rules#0" />
+            <element signature="method#retournetouslesvoisinsmorts#0;class#Rules#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Paire.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
@@ -506,7 +557,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Liste.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-113">
+        <state relative-caret-position="195">
           <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
           <folding>
             <element signature="method#identique#0;class#Liste#0" />
@@ -523,17 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="75" column="70" selection-start-line="75" selection-start-column="70" selection-end-line="75" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Rules.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="182" column="35" lean-forward="true" selection-start-line="182" selection-start-column="35" selection-end-line="182" selection-end-column="35" />
+          <caret line="182" column="35" selection-start-line="182" selection-start-column="35" selection-end-line="182" selection-end-column="35" />
           <folding>
             <element signature="method#NombreVoisin#0;class#Rules#0" />
             <element signature="method#verifierVoisinsretournecellulesvivantes#0;class#Rules#0" />
@@ -543,6 +587,13 @@
             <element signature="method#resurrection#0;class#Rules#0" />
             <element signature="method#retournetouslesvoisinsmorts#0;class#Rules#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
         </state>
       </provider>
     </entry>
