@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a77cf58-002a-493b-bb0a-88be7684ae5e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/GameOfLife/src/Liste.java" afterPath="$PROJECT_DIR$/GameOfLife/src/Liste.java" />
-      <change beforePath="$PROJECT_DIR$/GameOfLife/src/Principale.java" afterPath="$PROJECT_DIR$/GameOfLife/src/Principale.java" />
-      <change beforePath="$PROJECT_DIR$/GameOfLife/src/Rules.java" afterPath="$PROJECT_DIR$/GameOfLife/src/Rules.java" />
-    </list>
+    <list default="true" id="8a77cf58-002a-493b-bb0a-88be7684ae5e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
