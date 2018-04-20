@@ -16,6 +16,7 @@ public abstract class Liste<T> {
     public boolean isEmpty() {
         return (this.tete == null);
     }
+
     public boolean identique (Liste<T> l){
         Maillon<T> ref = this.tete;
         Maillon<T> ref1 = l.tete;
@@ -90,6 +91,8 @@ public abstract class Liste<T> {
         }
         return this;
     }
+
+
    public  void supplesdoublons (){
         Liste<T> b = new Rules();
         Maillon<T> ref = this.tete;

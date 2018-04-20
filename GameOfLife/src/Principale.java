@@ -39,7 +39,7 @@ public class Principale {
         System.out.println("identique " +b.identique(m));
         /*System.out.println(b.toString());*/
 
-        System.out.println("peridoe :" +a.comportement_asymptotique());
+        System.out.println("peridoe :" +a.comportement_asymptotique()); 
 
     }
 }

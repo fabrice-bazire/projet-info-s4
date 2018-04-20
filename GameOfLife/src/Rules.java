@@ -381,14 +381,14 @@ public class Rules extends Liste {
         int periode = 0;
         genmere = this;
         genfille = genmere.newgeneration();
-        boolean sameconfig = false;
-        while (!sameconfig) {
+        int nbTours;
+        while (nbTours != 10) {
             periode++;
             genmere = genmere.newgeneration();
             genfille = genfille.newgeneration();
             if (genmere.identique(genfille)) {
-                sameconfig = true;
-                genrecherche = genfille;
+                nbTours = nbTours + 1;
+                genrecherche= genfille;
             }
         }
         return periode ;
