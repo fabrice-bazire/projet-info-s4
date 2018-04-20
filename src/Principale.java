@@ -34,13 +34,23 @@ public class Principale {
     public static void main (String [] args){
        Rules a = new Rules();
        Liste dep = new Liste();
-       dep.addTrier(new Paire(13,15, 0));
-       dep.addTrier(new Paire(15,15,0));
-       dep.addTrier(new Paire(17,15,0));
-       dep.addTrier(new Paire(14,12,0));
-        dep.addTrier(new Paire(16,12,0));
-        dep.addTrier(new Paire(14,18,0));
-        dep.addTrier(new Paire(16,18,0));
+       dep.addTrier(new Paire(12,14, 0));
+       dep.addTrier(new Paire(12,16,0));
+       dep.addTrier(new Paire(13,11,0));
+       dep.addTrier(new Paire(13,14,0));
+        dep.addTrier(new Paire(13,15,0));
+        dep.addTrier(new Paire(13,17,0));
+        dep.addTrier(new Paire(14,12,0));
+        dep.addTrier(new Paire(14,15,0));
+        dep.addTrier(new Paire(15,12,0));
+        dep.addTrier(new Paire(15,15,0));
+        dep.addTrier(new Paire(16,11,0));
+        dep.addTrier(new Paire(16,13,0));
+        dep.addTrier(new Paire(16,14,0));
+        dep.addTrier(new Paire(16,16,0));
+        dep.addTrier(new Paire(17,14,0));
+        dep.addTrier(new Paire(17,16,0));
+
        a.liste = dep;
        System.out.print(dep);
        aff_grille(grille(a.liste));
