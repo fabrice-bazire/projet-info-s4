@@ -178,37 +178,29 @@ public class Rules {
         Liste initiale;
         Liste suivante;
         int periode = 0;
-        initiale = t;
-        suivante = initiale.newgeneration(t);
         boolean sameconfig = false;
+        initiale = t;
+        suivante = newgeneration(t);
+        if (initiale.identique(suivante)) {
+            return periode;
+        }
         while (!sameconfig) {
             periode++;
-            initiale = initiale.newgeneration(initiale);
-            suivante = suivante.newgeneration(suivante);
-            suivante = suivante.newgeneration(suivante);
+            System.out.println("periode dans le while : " + periode);
+            initiale = newgeneration(initiale);
+            System.out.println("initiale dans le while : " + initiale);
+            suivante = newgeneration(suivante);
+            System.out.println("suivante1 dans le while : " + suivante);
+            suivante = newgeneration(suivante);
+            System.out.println("suivante2 dans le while : " + suivante);
             if (initiale.identique(suivante)) {
-                sameconfig = true;
+                sameconfig=true;
+                periode++;
             }
         }
         return periode;
     }
 
-    public Liste resurrection(Liste CelluleVivante, Liste voisinmort) {
-        Liste CelluleMorteQuiPasseAVivant = new Liste();
-        Maillon<Paire> ref = voisinmort.tete;
-        int nombreVoisins = 0;
-        while (ref != null) {
-            Paire p = ref.getValeur();
-            nombreVoisins = NombreVoisin(CelluleVivante, p);
-            System.out.println("Le couple " + ref.getValeur().toString() + " possede " + nombreVoisins + " voisins vivants");
-            ;
-            if (nombreVoisins == 3) {
-                CelluleMorteQuiPasseAVivant.addLast(ref.getValeur());
-            }
-            ref = ref.getSuivant();
-        }
-        return CelluleMorteQuiPasseAVivant;
-    }
 
     public Liste retournetouslesvoisinsmorts (Liste t){
         Liste voisins = new Liste();
