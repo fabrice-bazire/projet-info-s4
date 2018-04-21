@@ -1,58 +1,47 @@
-public class Liste<T> extends Rules {
+public class Liste<T extends Comparable> extends Rules {
     Maillon<T> tete;
 
     public Liste() {
         this.tete = null;
     }
+
     public Liste (Maillon<T> tete) {
         this.tete = tete;
     }
+
     public Maillon<T> getTete() {
         return this.tete;
     }
+
     public void setTete(Maillon<T> tete) {
         this.tete = tete;
     }
+
     public boolean isEmpty() {
         return (this.tete == null);
     }
+
     public boolean identique (Liste<T> l){
         Maillon<T> ref = this.tete;
         Maillon<T> ref1 = l.tete;
-
         if (this.taille() != l.taille() || this.isEmpty() || l.isEmpty()){
             return false;
-
-        }
-        while (ref.getSuivant() != null) {
-            if (ref.getValeur().equals(ref1.getValeur())) {
-                ref = ref.getSuivant();
-                ref1 = ref1.getSuivant();
-
-            } else {
-                return false;
-
+        }else {
+            while (ref.getSuivant() != null) {
+                if (ref.getValeur().equals(ref1.getValeur())) {
+                    ref = ref.getSuivant();
+                    ref1 = ref1.getSuivant();
+                } else {
+                    return false;
+                }
             }
+            return true;
         }
-
-
-        return true;
     }
+
     public void addInHead(T p) {
         Maillon<T> ancienneTete = this.tete;
         tete = new Maillon<T>(p, ancienneTete);
-    }
-
-    public boolean addAfter(T p, Maillon<T> m) {
-        if (m.getSuivant() == null) {
-            return false;
-        } else {
-            Maillon<T> l = m.getSuivant();
-            Maillon<T> x = new Maillon<T>(p);
-            m.setSuivant(x);
-            x.setSuivant(l);
-            return true;
-        }
     }
 
     protected void addLast(T valeur) {
@@ -74,6 +63,7 @@ public class Liste<T> extends Rules {
         }
         return dernier;
     }
+
     public int taille(){
         int longueur=0;
         Maillon<T> ref = getTete();
@@ -112,8 +102,9 @@ public class Liste<T> extends Rules {
         }
         return this;
     }
-  /* public  void supplesdoublons (){
-        Liste<T> b = new Rules();
+
+    public  void supplesdoublons (){
+        Liste<T> b = new Liste<T>();
         Maillon<T> ref = this.tete;
         while(ref != null){
             if (!b.contains(ref.getValeur())) {
@@ -122,8 +113,7 @@ public class Liste<T> extends Rules {
             ref = ref.getSuivant();
         }
         this.tete = b.tete;
-
-    }*/
+    }
 
     public String toString(){
         String s = "Voici les coordonnées des cellules :\n";
@@ -152,13 +142,13 @@ public class Liste<T> extends Rules {
             this.addInHead(p);
         else if ((ref.compareTo (x)) > 0) {
             this.addInHead(p);
-            }else{
-                while (ref.compareTo(x) <= 0 && ref != null) {
-                    prec = ref;
-                    ref = ref.getSuivant();
+        }else {
+            while (ref != null && ref.compareTo(x) <= 0) {
+                prec = ref;
+                ref = ref.getSuivant();
 
-                }
             }
+
             if (ref == null)
                 this.addLast(p);
 
@@ -167,7 +157,7 @@ public class Liste<T> extends Rules {
                 x.setSuivant(prec.getSuivant());
                 prec.setSuivant(x);
             }
-
+        }
             /*
             Maillon tmp = ref.getSuivant();
             ref.setSuivant(x);
@@ -180,6 +170,4 @@ public class Liste<T> extends Rules {
                 ref.getSuivant().setValeur(a);*/
 
     }
-
-
 }
