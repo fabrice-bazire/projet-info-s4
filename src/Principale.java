@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class Principale {
 
-    public static char [][] grille (Liste l){
-        Paire p = lecture_paire_fichier_lif ();
+    public static char [][] grille (Liste l, String fichier){
+        Paire p = lecture_paire_fichier_lif (fichier);
         char  grille [][] = new char [30][30];
         for (int i = 0; i<grille.length; i++){
             for (int j = 0; j<grille[1].length; j++){
@@ -20,6 +20,7 @@ public class Principale {
     }
 
     public static void aff_grille (char [][] grille){
+        System.out.println("\n\n");
         for (int i = 0; i<grille.length; i++) {
             for (int j = 0; j < grille[1].length; j++) {
                 System.out.print(" | " + grille[i][j]);
@@ -28,12 +29,12 @@ public class Principale {
         }
     }
 
-    public static Paire lecture_paire_fichier_lif () {
+    public static Paire lecture_paire_fichier_lif (String fichier) {
       String i;
       char [] x;
       Paire coin = new Paire(0,0,0);
       try{
-        FileReader f = new FileReader ("fichier.lif");
+        FileReader f = new FileReader (fichier);
         BufferedReader b = new BufferedReader(f);
         String s = " ";
         while((s= b.readLine())!=null){ 
@@ -67,13 +68,13 @@ public class Principale {
     return coin;
 }
 
-    public static Liste<Paire> lecture_config_initiale_fichier_lif (Paire coin) {
+    public static Liste<Paire> lecture_config_initiale_fichier_lif (Paire coin, String fichier) {
     Liste<Paire> l = new Liste ();
     int numligne = coin.gety();
       String i;
       char [] x;
       try{
-        FileReader f = new FileReader ("fichier.lif");
+        FileReader f = new FileReader (fichier);
         BufferedReader b = new BufferedReader(f);
         String s = " ";
         while((s= b.readLine())!=null){ 
@@ -113,28 +114,48 @@ public class Principale {
 }
 
     public static void main (String [] args){
-        if (args == null){
+        if (args[0].equals("-game")){
             Rules a = new Rules();
-            Liste dep = lecture_config_initiale_fichier_lif (lecture_paire_fichier_lif ());
+            Liste dep = lecture_config_initiale_fichier_lif (lecture_paire_fichier_lif ("fichier.lif"), "fichier.lif");
             a.liste = dep;
             int [] x = (a.extraire_nb_pour_naitre(a.lecture_regles_fichier_lif()));
             int [] y = (a.extraire_nb_pour_survivre(a.lecture_regles_fichier_lif()));
             System.out.println(dep);
-            aff_grille(grille(a.liste));
+            aff_grille(grille(a.liste, "fichier.lif"));
             System.out.println(" ");
             a.liste = a.newgeneration(a.liste);
-            aff_grille(grille(a.liste));
+            aff_grille(grille(a.liste, "fichier.lif"));
             //System.out.println(a.liste);
             System.out.println(" ");
             a.liste = a.newgeneration(a.liste);
             //System.out.println(a.liste);
-            aff_grille(grille(a.liste));
+            aff_grille(grille(a.liste, "fichier.lif"));
         }
         if (args[0].equals("-name")) {
             System.out.println("Cécile, Amina, Martin et Fabrice");
         }
         if (args[0].equals("-h")){
             System.out.println("options possibles : \n-name : affiche le nom des créateurs de cette appli\n-s : effectue une simulation du jeu (nécéssite une durée et un fichier.lif en paramètre derrière -s)\n-c : calcule le type d'évolution du jeu (nécéssite une durée max et un fichier.lif en paramètre derrière -c)\n-w : calcule le type d'évolution de plusieurs jeux dans un dossier (nécéssite une durée max et le nom du dossier en paramètre derriere -w)");
+        }
+        if (args[0].equals("-s")){
+          int duree = Integer.parseInt(args[1]); 
+          String nom_fichier = args[2];
+          System.out.println("La durée est de : " + duree + "\nLe nom du fichier est : " + nom_fichier);
+          int i = 0;
+          Rules a = new Rules();
+          Liste dep = lecture_config_initiale_fichier_lif (lecture_paire_fichier_lif (nom_fichier), nom_fichier);
+          a.liste = dep;
+          int [] x = (a.extraire_nb_pour_naitre(a.lecture_regles_fichier_lif()));
+          int [] y = (a.extraire_nb_pour_survivre(a.lecture_regles_fichier_lif()));
+          aff_grille(grille(a.liste, nom_fichier));
+            System.out.println("generation n°0");
+          while (duree >= 0){
+            i++;
+            duree--;
+            a.liste = a.newgeneration(a.liste);
+            aff_grille(grille(a.liste, nom_fichier));
+            System.out.println("generation n°" + i);
+          }
         }
     }
 }

@@ -5,13 +5,14 @@ import java.util.Scanner;
 
 public class Rules {
     public Liste<Paire> liste;
+    public String fichier = "fichier.lif";
 
-    public static char[] lecture_regles_fichier_lif() {
+    public char[] lecture_regles_fichier_lif() {
         char[] r = new char[21];
         String i;
         char[] x;
         try {
-            FileReader f = new FileReader("fichier.lif");
+            FileReader f = new FileReader(this.fichier);
             BufferedReader b = new BufferedReader(f);
             String s = " ";
             while ((s = b.readLine()) != null) {
@@ -135,58 +136,41 @@ public class Rules {
         return lesvoisinsvivants;
     }
 
-    public Liste vivantsquirestentvivants(Liste t, int[] tab) {
+    /*public Liste vivantsquirestentvivants(Liste t, int[] tab) {
         Liste lesvoisinsvivants = new Liste();
         Maillon<Paire> ref = t.tete;
         while (ref != null) {
             for (int i = 0; i < tab.length; i++) {
-                System.out.println("tour n°" + i + " : " + tab[i]);
                 Paire p1 = new Paire(ref.getValeur().getx() - 1, ref.getValeur().gety() + 1, 0);
                 if ((NombreVoisin(t, p1) == tab[i]) && !lesvoisinsvivants.contains(p1) && t.contains(p1)) {
-                    System.out.println("p1");
-                    System.out.println("nombre voisin" + NombreVoisin(t, p1));
                     lesvoisinsvivants.addTrier(p1); // ou ref car on est pas sur de pouvoir ajoute direct une paire
                 }
                 Paire p2 = new Paire(ref.getValeur().getx(), ref.getValeur().gety() + 1, 0);
                 if ((NombreVoisin(t, p2) == tab[i]) && !lesvoisinsvivants.contains(p2) && t.contains(p2)) {
-                    System.out.println("p2");
-                    System.out.println("nombre voisin" + NombreVoisin(t, p2));
                     lesvoisinsvivants.addTrier(p2); // ou ref car on est pas sur de pouvoir ajoute direct une paire
                 }
                 Paire p3 = new Paire(ref.getValeur().getx() + 1, ref.getValeur().gety() + 1, 0);
                 if ((NombreVoisin(t, p3) == tab[i]) && !lesvoisinsvivants.contains(p3) && t.contains(p3)) {
-                    System.out.println("p3");
-                    System.out.println("nombre voisin" + NombreVoisin(t, p3));
                     lesvoisinsvivants.addTrier(p3); // ou ref car on est pas sur de pouvoir ajoute direct une paire
                 }
                 Paire p4 = new Paire(ref.getValeur().getx() - 1, ref.getValeur().gety(), 0);
                 if ((NombreVoisin(t, p4) == tab[i]) && !lesvoisinsvivants.contains(p4) && t.contains(p4)) {
-                    System.out.println("p4");
-                    System.out.println("nombre voisin" + NombreVoisin(t, p4));
                     lesvoisinsvivants.addTrier(p4); // ou ref car on est pas sur de pouvoir ajoute direct une paire
                 }
                 Paire p5 = new Paire(ref.getValeur().getx() + 1, ref.getValeur().gety(), 0);
                 if ((NombreVoisin(t, p5) == tab[i]) && !lesvoisinsvivants.contains(p5) && t.contains(p5)) {
-                    System.out.println("p5");
-                    System.out.println("nombre voisin" + NombreVoisin(t, p5));
                     lesvoisinsvivants.addTrier(p5); // ou ref car on est pas sur de pouvoir ajoute direct une paire
                 }
                 Paire p6 = new Paire(ref.getValeur().getx() - 1, ref.getValeur().gety() - 1, 0);
                 if ((NombreVoisin(t, p6) == tab[i]) && !lesvoisinsvivants.contains(p6) && t.contains(p6)) {
-                    System.out.println("p6");
-                    System.out.println("nombre voisin" + NombreVoisin(t, p6));
                     lesvoisinsvivants.addTrier(p6); // ou ref car on est pas sur de pouvoir ajoute direct une paire
                 }
                 Paire p7 = new Paire(ref.getValeur().getx(), ref.getValeur().gety() - 1, 0);
                 if ((NombreVoisin(t, p7) == tab[i]) && !lesvoisinsvivants.contains(p7) && t.contains(p7)) {
-                    System.out.println("p7");
-                    System.out.println("nombre voisin" + NombreVoisin(t, p7));
                     lesvoisinsvivants.addTrier(p7); // ou ref car on est pas sur de pouvoir ajoute direct une paire
                 }
                 Paire p8 = new Paire(ref.getValeur().getx() + 1, ref.getValeur().gety() - 1, 0);
                 if ((NombreVoisin(t, p8) == tab[i]) && !lesvoisinsvivants.contains(p8) && t.contains(p8)) {
-                    System.out.println("p8");
-                    System.out.println("nombre voisin" + NombreVoisin(t, p8));
                     lesvoisinsvivants.addTrier(p8); // ou ref car on est pas sur de pouvoir ajoute direct une paire
                 }
                 System.out.println(" ");
@@ -194,19 +178,26 @@ public class Rules {
             ref = ref.getSuivant();
         }
         return lesvoisinsvivants;
+    }*/
+
+    public Liste vivantsquirestentvivants(Liste t, int[] tab) {
+        Liste lessurvivants = new Liste();
+        Maillon<Paire> ref = t.tete;
+        while (ref != null) {
+            for (int i = 0; i < tab.length; i++) {
+                if (NombreVoisin(t, ref.getValeur()) == tab[i]){
+                    lessurvivants.addTrier(ref.getValeur());
+                }
+            }
+            ref = ref.getSuivant();
+        }
+        return lessurvivants;
     }
 
     public Liste newgeneration(Liste t) {
         Liste a = new Liste();
         int[] x = (a.extraire_nb_pour_naitre(a.lecture_regles_fichier_lif()));
         int[] y = (a.extraire_nb_pour_survivre(a.lecture_regles_fichier_lif()));
-        for (int i = 0; i < y.length; i++) {
-            System.out.print(y[i] + " ");
-        }
-        System.out.print("/ ");
-        for (int i = 0; i < x.length; i++) {
-            System.out.print(x[i] + " ");
-        }
         System.out.println(" ");
         Liste listevoisinVivant = mortedevenantvivantes(t, x);
         Liste listevoisinMort = vivantsquirestentvivants(t, y);
