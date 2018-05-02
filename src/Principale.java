@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class Principale {
 
+    public static String f;
+
     public static char [][] grille (Liste l, String fichier){
         Paire p = lecture_paire_fichier_lif (fichier);
         char  grille [][] = new char [30][30];
@@ -138,22 +140,22 @@ public class Principale {
             System.out.println("options possibles : \n-name : affiche le nom des créateurs de cette appli\n-s : effectue une simulation du jeu (nécéssite une durée et un fichier.lif en paramètre derrière -s)\n-c : calcule le type d'évolution du jeu (nécéssite une durée max et un fichier.lif en paramètre derrière -c)\n-w : calcule le type d'évolution de plusieurs jeux dans un dossier (nécéssite une durée max et le nom du dossier en paramètre derriere -w)");
         }
         if (args[0].equals("-s")){
-          int duree = Integer.parseInt(args[1]); 
-          String nom_fichier = args[2];
-          System.out.println("La durée est de : " + duree + "\nLe nom du fichier est : " + nom_fichier);
+          int duree = Integer.parseInt(args[1]);
+          f = args[2];
+          System.out.println("La durée est de : " + duree + "\nLe nom du fichier est : " + f);
           int i = 0;
           Rules a = new Rules();
-          Liste dep = lecture_config_initiale_fichier_lif (lecture_paire_fichier_lif (nom_fichier), nom_fichier);
+          Liste dep = lecture_config_initiale_fichier_lif (lecture_paire_fichier_lif (f), f);
           a.liste = dep;
           int [] x = (a.extraire_nb_pour_naitre(a.lecture_regles_fichier_lif()));
           int [] y = (a.extraire_nb_pour_survivre(a.lecture_regles_fichier_lif()));
-          aff_grille(grille(a.liste, nom_fichier));
+          aff_grille(grille(a.liste, f));
             System.out.println("generation n°0");
           while (duree >= 0){
             i++;
             duree--;
             a.liste = a.newgeneration(a.liste);
-            aff_grille(grille(a.liste, nom_fichier));
+            aff_grille(grille(a.liste, f));
             System.out.println("generation n°" + i);
           }
         }

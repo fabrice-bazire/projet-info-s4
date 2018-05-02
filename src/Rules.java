@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class Rules {
     public Liste<Paire> liste;
-    public String fichier = "fichier.lif";
+
+    public String fichier = Principale.f;
 
     public char[] lecture_regles_fichier_lif() {
         char[] r = new char[21];
@@ -198,10 +199,10 @@ public class Rules {
         Liste a = new Liste();
         int[] x = (a.extraire_nb_pour_naitre(a.lecture_regles_fichier_lif()));
         int[] y = (a.extraire_nb_pour_survivre(a.lecture_regles_fichier_lif()));
-        System.out.println(" ");
         Liste listevoisinVivant = mortedevenantvivantes(t, x);
         Liste listevoisinMort = vivantsquirestentvivants(t, y);
-        return listevoisinVivant.concatener((listevoisinMort));
+        a = listevoisinVivant.concatener((listevoisinMort));
+        return a;
     }
 
     public int taille_queue(Liste t, int periode) {
