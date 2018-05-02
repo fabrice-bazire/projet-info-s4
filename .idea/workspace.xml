@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="projet-info-s4:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f8907bfa-5b60-4a60-8247-0ae306c57d12" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -18,10 +23,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Principale.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Principale.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="69" column="77" selection-start-line="69" selection-start-column="77" selection-end-line="69" selection-end-column="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#grille#0;class#Principale#0" />
+                <element signature="method#aff_grille#0;class#Principale#0" />
+                <element signature="method#lecture_paire_fichier_lif#0;class#Principale#0" />
+                <element signature="method#lecture_config_initiale_fichier_lif#0;class#Principale#0" />
+                <element signature="method#recensement#0;class#Principale#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rules.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Rules.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="321" column="13" selection-start-line="321" selection-start-column="13" selection-end-line="321" selection-end-column="13" />
+              <folding>
+                <element signature="method#lecture_regles_fichier_lif#0;class#Rules#0" />
+                <element signature="method#NombreVoisin#0;class#Rules#0" />
+                <element signature="method#mortedevenantvivantes#0;class#Rules#0" />
+                <element signature="method#vivantsquirestentvivants#0;class#Rules#0" />
+                <element signature="method#newgeneration#0;class#Rules#0" />
+                <element signature="method#taille_queue#0;class#Rules#0" />
+                <element signature="method#extraire_nb_pour_survivre#0;class#Rules#0" />
+                <element signature="method#extraire_nb_pour_naitre#0;class#Rules#0" />
+                <element signature="method#verif_regles#0;class#Rules#0" />
+                <element signature="method#période#0;class#Rules#0" />
+                <element signature="method#retournetouslesvoisinsmorts#0;class#Rules#0" />
+                <element signature="method#verifierVoisinsretournecellulesvivantes#0;class#Rules#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Liste.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Liste.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="161">
               <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
               <folding>
                 <element signature="method#identique#0;class#Liste#0" />
@@ -29,37 +74,10 @@
                 <element signature="method#addLast#0;class#Liste#0" />
                 <element signature="method#getDernierElement#0;class#Liste#0" />
                 <element signature="method#taille#0;class#Liste#0" />
-                <element signature="method#contains#0;class#Liste#0" />
                 <element signature="method#concatener#0;class#Liste#0" />
                 <element signature="method#supplesdoublons#0;class#Liste#0" />
                 <element signature="method#toString#0;class#Liste#0" />
                 <element signature="method#addTrier#0;class#Liste#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Principale.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Principale.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5">
-              <caret line="94" column="31" lean-forward="true" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rules.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Rules.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="194" column="70" selection-start-line="194" selection-start-column="70" selection-end-line="194" selection-end-column="70" />
-              <folding>
-                <element signature="method#NombreVoisin#0;class#Rules#0" />
-                <element signature="method#verifierVoisinsretournecellulesvivantes#0;class#Rules#0" />
-                <element signature="method#mortedevenantvivantes#0;class#Rules#0" />
-                <element signature="method#vivantsquirestentvivants#0;class#Rules#0" />
-                <element signature="method#newgeneration#0;class#Rules#0" />
-                <element signature="method#retournetouslesvoisinsmorts#0;class#Rules#0" />
               </folding>
             </state>
           </provider>
@@ -81,8 +99,8 @@
         <option value="$PROJECT_DIR$/src/Maillon.java" />
         <option value="$PROJECT_DIR$/src/Paire.java" />
         <option value="$PROJECT_DIR$/src/Liste.java" />
-        <option value="$PROJECT_DIR$/src/Principale.java" />
         <option value="$PROJECT_DIR$/src/Rules.java" />
+        <option value="$PROJECT_DIR$/src/Principale.java" />
       </list>
     </option>
   </component>
@@ -96,6 +114,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -108,16 +128,25 @@
               <item name="projet-info-s4" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="projet-info-s4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="projet-info-s4" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -132,9 +161,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Principale">
     <configuration name="Principale" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Principale" />
+      <module name="projet-info-s4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="Rules" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Rules" />
       <module name="projet-info-s4" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -179,9 +213,14 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Application.Principale" />
+      <item itemvalue="Application.Rules" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Principale" />
+        <item itemvalue="Application.Rules" />
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +239,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="827" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -209,12 +249,12 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5790173" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.71447545" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16319445" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17777778" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -228,16 +268,171 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3187251" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16319445" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3292683" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="23" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1875">
+          <caret line="125" column="21" selection-start-line="125" selection-start-column="21" selection-end-line="125" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#grille#0;class#Principale#0" />
+            <element signature="method#aff_grille#0;class#Principale#0" />
+            <element signature="method#lecture_paire_fichier_lif#0;class#Principale#0" />
+            <element signature="method#lecture_config_initiale_fichier_lif#0;class#Principale#0" />
+            <element signature="method#recensement#0;class#Principale#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1935">
+          <caret line="129" column="8" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#grille#0;class#Principale#0" />
+            <element signature="method#aff_grille#0;class#Principale#0" />
+            <element signature="method#lecture_paire_fichier_lif#0;class#Principale#0" />
+            <element signature="method#lecture_config_initiale_fichier_lif#0;class#Principale#0" />
+            <element signature="method#recensement#0;class#Principale#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5265">
+          <caret line="351" lean-forward="true" selection-start-line="351" selection-end-line="351" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1920">
+          <caret line="128" column="30" selection-start-line="128" selection-start-column="30" selection-end-line="128" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#grille#0;class#Principale#0" />
+            <element signature="method#aff_grille#0;class#Principale#0" />
+            <element signature="method#lecture_paire_fichier_lif#0;class#Principale#0" />
+            <element signature="method#lecture_config_initiale_fichier_lif#0;class#Principale#0" />
+            <element signature="method#recensement#0;class#Principale#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="275" column="13" lean-forward="true" selection-start-line="275" selection-start-column="13" selection-end-line="275" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="41" lean-forward="true" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#grille#0;class#Principale#0" />
+            <element signature="method#aff_grille#0;class#Principale#0" />
+            <element signature="method#lecture_paire_fichier_lif#0;class#Principale#0" />
+            <element signature="method#lecture_config_initiale_fichier_lif#0;class#Principale#0" />
+            <element signature="method#recensement#0;class#Principale#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="190" column="47" selection-start-line="190" selection-start-column="47" selection-end-line="190" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="190" column="47" selection-start-line="190" selection-start-column="47" selection-end-line="190" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Liste.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+          <folding>
+            <element signature="method#identique#0;class#Liste#0" />
+            <element signature="method#addInHead#0;class#Liste#0" />
+            <element signature="method#addLast#0;class#Liste#0" />
+            <element signature="method#getDernierElement#0;class#Liste#0" />
+            <element signature="method#taille#0;class#Liste#0" />
+            <element signature="method#concatener#0;class#Liste#0" />
+            <element signature="method#supplesdoublons#0;class#Liste#0" />
+            <element signature="method#toString#0;class#Liste#0" />
+            <element signature="method#addTrier#0;class#Liste#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="94" column="31" lean-forward="true" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="194" column="70" selection-start-line="194" selection-start-column="70" selection-end-line="194" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Liste.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -248,7 +443,6 @@
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
-            <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
             <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
@@ -274,7 +468,6 @@
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
-            <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
             <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
@@ -300,7 +493,6 @@
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
-            <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
             <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
@@ -328,7 +520,6 @@
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
-            <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
             <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
@@ -357,7 +548,6 @@
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
-            <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
             <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
@@ -386,7 +576,6 @@
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
-            <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
             <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
@@ -415,7 +604,6 @@
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
-            <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
             <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
@@ -444,7 +632,6 @@
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
-            <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
             <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
@@ -472,7 +659,7 @@
     <entry file="file://$PROJECT_DIR$/src/Paire.java" />
     <entry file="file://$PROJECT_DIR$/src/Liste.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="161">
           <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
           <folding>
             <element signature="method#identique#0;class#Liste#0" />
@@ -480,7 +667,6 @@
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
-            <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
             <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
@@ -489,27 +675,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="94" column="31" lean-forward="true" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Rules.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="194" column="70" selection-start-line="194" selection-start-column="70" selection-end-line="194" selection-end-column="70" />
+        <state relative-caret-position="525">
+          <caret line="321" column="13" selection-start-line="321" selection-start-column="13" selection-end-line="321" selection-end-column="13" />
           <folding>
+            <element signature="method#lecture_regles_fichier_lif#0;class#Rules#0" />
             <element signature="method#NombreVoisin#0;class#Rules#0" />
-            <element signature="method#verifierVoisinsretournecellulesvivantes#0;class#Rules#0" />
             <element signature="method#mortedevenantvivantes#0;class#Rules#0" />
             <element signature="method#vivantsquirestentvivants#0;class#Rules#0" />
             <element signature="method#newgeneration#0;class#Rules#0" />
+            <element signature="method#taille_queue#0;class#Rules#0" />
+            <element signature="method#extraire_nb_pour_survivre#0;class#Rules#0" />
+            <element signature="method#extraire_nb_pour_naitre#0;class#Rules#0" />
+            <element signature="method#verif_regles#0;class#Rules#0" />
+            <element signature="method#période#0;class#Rules#0" />
             <element signature="method#retournetouslesvoisinsmorts#0;class#Rules#0" />
+            <element signature="method#verifierVoisinsretournecellulesvivantes#0;class#Rules#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="69" column="77" selection-start-line="69" selection-start-column="77" selection-end-line="69" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#grille#0;class#Principale#0" />
+            <element signature="method#aff_grille#0;class#Principale#0" />
+            <element signature="method#lecture_paire_fichier_lif#0;class#Principale#0" />
+            <element signature="method#lecture_config_initiale_fichier_lif#0;class#Principale#0" />
+            <element signature="method#recensement#0;class#Principale#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>projet-info-s4:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>projet-info-s4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

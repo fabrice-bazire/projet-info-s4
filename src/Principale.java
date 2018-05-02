@@ -1,6 +1,10 @@
+import java.io.*;
+import java.util.Scanner;
+
 public class Principale {
 
     public static char [][] grille (Liste l){
+        Paire p = lecture_paire_fichier_lif ();
         char  grille [][] = new char [30][30];
         for (int i = 0; i<grille.length; i++){
             for (int j = 0; j<grille[1].length; j++){
@@ -9,21 +13,14 @@ public class Principale {
         }
         Maillon<Paire> ref = l.tete;
         while (ref != null){
-            grille[ref.getValeur().x-1][ref.getValeur().y-1] = 'X';
+            grille[ref.getValeur().x + p.getx()][ref.getValeur().y + p.gety()] = 'X';
             ref = ref.getSuivant();
         }
         return grille;
     }
 
     public static void aff_grille (char [][] grille){
-        System.out.println("     1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30");
         for (int i = 0; i<grille.length; i++) {
-            if (i < 9){
-                System.out.print(i+1 + " ");
-            }else{
-                System.out.print(i+1);
-            }
-
             for (int j = 0; j < grille[1].length; j++) {
                 System.out.print(" | " + grille[i][j]);
             }
@@ -31,75 +28,113 @@ public class Principale {
         }
     }
 
+    public static Paire lecture_paire_fichier_lif () {
+      String i;
+      char [] x;
+      Paire coin = new Paire(0,0,0);
+      try{
+        FileReader f = new FileReader ("fichier.lif");
+        BufferedReader b = new BufferedReader(f);
+        String s = " ";
+        while((s= b.readLine())!=null){ 
+          Scanner sc = new Scanner (s);
+          sc.useDelimiter("\n");
+          try {
+            i = sc.next();
+            x = i.toCharArray();
+              if(x[0] == '#' && x[1] == 'P'){
+                if(x[3] == '-'){
+                  if (x[6] != '-'){
+                    coin = new Paire((Character.getNumericValue(x[4]) * -1), Character.getNumericValue(x[6]), 0);
+                  }else{
+                    coin = new Paire((Character.getNumericValue(x[4]) * -1), (Character.getNumericValue(x[7]) * -1), 0);
+                  }
+                }else{
+                  if (x[5] != '-'){
+                    coin = new Paire(Character.getNumericValue(x[3]), Character.getNumericValue(x[5]), 0);
+                  }else{
+                    coin = new Paire(Character.getNumericValue(x[3]), (Character.getNumericValue(x[6]) * -1), 0);
+                  }
+                }
+              }
+          }catch(Exception e) {
+           System.out.print(e.getMessage());
+          }
+        }
+      }catch (IOException e) {
+        System.out.println(e);
+      }
+    return coin;
+}
+
+    public static Liste<Paire> lecture_config_initiale_fichier_lif (Paire coin) {
+    Liste<Paire> l = new Liste ();
+    int numligne = coin.gety();
+      String i;
+      char [] x;
+      try{
+        FileReader f = new FileReader ("fichier.lif");
+        BufferedReader b = new BufferedReader(f);
+        String s = " ";
+        while((s= b.readLine())!=null){ 
+          Scanner sc = new Scanner (s);
+          sc.useDelimiter("\n");
+          try {
+            i = sc.next();
+            x = i.toCharArray();
+              if (x[0] == '.' || x[0] == '*'){
+                l.concatener(recensement(coin, i, numligne));
+                numligne++;
+              }
+          }catch(Exception e) {
+          System.out.print(e.getMessage());
+          }
+        }
+    }catch (IOException e) {
+        System.out.println(e);
+    }
+    return l;
+}
+
+    public static Liste recensement (Paire coin, String ligne, int numligne){
+  Liste ar = new Liste();
+  char [] x;
+  try {
+    x = ligne.toCharArray();
+    for (int i = 0; i < ligne.length(); i++){
+      if (x[i] == '*'){
+        ar.addTrier(new Paire (numligne, i+coin.getx(), 0));
+      }
+    }
+  }catch(Exception e) {
+          System.out.print(e.getMessage());
+    }
+    return ar;
+}
+
     public static void main (String [] args){
-       Rules a = new Rules();
-       Liste dep = new Liste();
-      /* dep.addTrier(new Paire(13,8, 0));
-       dep.addTrier(new Paire(13,9,0));
-       dep.addTrier(new Paire(13,16,0));
-       dep.addTrier(new Paire(13,17,0));
-       dep.addTrier(new Paire(14,7,0));
-        dep.addTrier(new Paire(15,7,0));
-        dep.addTrier(new Paire(16,7,0));
-        dep.addTrier(new Paire(17,8,0));
-        dep.addTrier(new Paire(17,9,0));
-        dep.addTrier(new Paire(14,10,0));
-        dep.addTrier(new Paire(15,10,0));
-        dep.addTrier(new Paire(16,10,0));
-        dep.addTrier(new Paire(14,15,0));
-        dep.addTrier(new Paire(14,18,0));
-        dep.addTrier(new Paire(15,15,0));
-        dep.addTrier(new Paire(15,18,0));
-        dep.addTrier(new Paire(16,15,0));
-        dep.addTrier(new Paire(16,18,0));
-        dep.addTrier(new Paire(17,16,0));
-        dep.addTrier(new Paire(17,17,0));*/
-        dep.addTrier(new Paire(11,13, 0));
-        dep.addTrier(new Paire(11,14,0));
-        dep.addTrier(new Paire(11,15,0));
-        dep.addTrier(new Paire(11,16, 0));
-        dep.addTrier(new Paire(12,13,0));
-        dep.addTrier(new Paire(12,16,0));
-        dep.addTrier(new Paire(13,11,0));
-        dep.addTrier(new Paire(13,12,0));
-        dep.addTrier(new Paire(13,13,0));
-        dep.addTrier(new Paire(13,16,0));
-        dep.addTrier(new Paire(13,17,0));
-        dep.addTrier(new Paire(13,18,0));
-        dep.addTrier(new Paire(14,11,0));
-        dep.addTrier(new Paire(14,18,0));
-        dep.addTrier(new Paire(15,11,0));
-        dep.addTrier(new Paire(15,18,0));
-        dep.addTrier(new Paire(16,11,0));
-        dep.addTrier(new Paire(16,12,0));
-        dep.addTrier(new Paire(16,13,0));
-        dep.addTrier(new Paire(16,17,0));
-        dep.addTrier(new Paire(16,18,0));
-        dep.addTrier(new Paire(17,16,0));
-        dep.addTrier(new Paire(17,13, 0));
-        dep.addTrier(new Paire(18,13,0));
-        dep.addTrier(new Paire(18,14,0));
-        dep.addTrier(new Paire(18,15,0));
-        dep.addTrier(new Paire(18,16,0));
-        dep.addTrier(new Paire(16,16,0));
-       a.liste = dep;
-       System.out.print(dep);
-       aff_grille(grille(a.liste));
-       System.out.println(" ");
-       a.liste = a.newgeneration(a.liste);
-        aff_grille(grille(a.liste));
-        System.out.println(" ");
-       a.liste = a.newgeneration(a.liste);
-       aff_grille(grille(a.liste));
-       System.out.println(" ");
-       a.liste = a.newgeneration(a.liste);
-       aff_grille(grille(a.liste));
-       System.out.println(" ");
-       a.liste = a.newgeneration(a.liste);
-       aff_grille(grille(a.liste));
-
-      System.out.println(a.comportement_asymptotique(a.liste));
-
-       // aff_grille(grille(a.retournetouslesvoisinsmorts(dep)));
+        if (args == null){
+            Rules a = new Rules();
+            Liste dep = lecture_config_initiale_fichier_lif (lecture_paire_fichier_lif ());
+            a.liste = dep;
+            int [] x = (a.extraire_nb_pour_naitre(a.lecture_regles_fichier_lif()));
+            int [] y = (a.extraire_nb_pour_survivre(a.lecture_regles_fichier_lif()));
+            System.out.println(dep);
+            aff_grille(grille(a.liste));
+            System.out.println(" ");
+            a.liste = a.newgeneration(a.liste);
+            aff_grille(grille(a.liste));
+            //System.out.println(a.liste);
+            System.out.println(" ");
+            a.liste = a.newgeneration(a.liste);
+            //System.out.println(a.liste);
+            aff_grille(grille(a.liste));
+        }
+        if (args[0].equals("-name")) {
+            System.out.println("Cécile, Amina, Martin et Fabrice");
+        }
+        if (args[0].equals("-h")){
+            System.out.println("options possibles : \n-name : affiche le nom des créateurs de cette appli\n-s : effectue une simulation du jeu (nécéssite une durée et un fichier.lif en paramètre derrière -s)\n-c : calcule le type d'évolution du jeu (nécéssite une durée max et un fichier.lif en paramètre derrière -c)\n-w : calcule le type d'évolution de plusieurs jeux dans un dossier (nécéssite une durée max et le nom du dossier en paramètre derriere -w)");
+        }
     }
 }
