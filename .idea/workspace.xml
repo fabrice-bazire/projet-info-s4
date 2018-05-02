@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8907bfa-5b60-4a60-8247-0ae306c57d12" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-info-s4/Principale.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-info-s4/Principale.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projet-info-s4/Rules.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projet-info-s4/Rules.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Principale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lecture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lecture.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Rules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rules.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,10 +21,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Principale.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Principale.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Principale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
+            <state relative-caret-position="165">
               <caret line="69" column="77" selection-start-line="69" selection-start-column="77" selection-end-line="69" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -35,6 +33,7 @@
                 <element signature="method#lecture_paire_fichier_lif#0;class#Principale#0" />
                 <element signature="method#lecture_config_initiale_fichier_lif#0;class#Principale#0" />
                 <element signature="method#recensement#0;class#Principale#0" />
+                <element signature="method#main#0;class#Principale#0" />
               </folding>
             </state>
           </provider>
@@ -43,8 +42,8 @@
       <file leaf-file-name="Rules.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Rules.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="321" column="13" selection-start-line="321" selection-start-column="13" selection-end-line="321" selection-end-column="13" />
+            <state relative-caret-position="390">
+              <caret line="323" column="1" selection-start-line="323" selection-start-column="1" selection-end-line="323" selection-end-column="1" />
               <folding>
                 <element signature="method#lecture_regles_fichier_lif#0;class#Rules#0" />
                 <element signature="method#NombreVoisin#0;class#Rules#0" />
@@ -55,18 +54,17 @@
                 <element signature="method#extraire_nb_pour_survivre#0;class#Rules#0" />
                 <element signature="method#extraire_nb_pour_naitre#0;class#Rules#0" />
                 <element signature="method#verif_regles#0;class#Rules#0" />
-                <element signature="method#période#0;class#Rules#0" />
-                <element signature="method#retournetouslesvoisinsmorts#0;class#Rules#0" />
-                <element signature="method#verifierVoisinsretournecellulesvivantes#0;class#Rules#0" />
+                <element signature="method#periode#0;class#Rules#0" />
+                <element signature="method#comportement#0;class#Rules#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Liste.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Liste.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Liste.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
+            <state relative-caret-position="195">
               <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
               <folding>
                 <element signature="method#identique#0;class#Liste#0" />
@@ -74,6 +72,7 @@
                 <element signature="method#addLast#0;class#Liste#0" />
                 <element signature="method#getDernierElement#0;class#Liste#0" />
                 <element signature="method#taille#0;class#Liste#0" />
+                <element signature="method#contains#0;class#Liste#0" />
                 <element signature="method#concatener#0;class#Liste#0" />
                 <element signature="method#supplesdoublons#0;class#Liste#0" />
                 <element signature="method#toString#0;class#Liste#0" />
@@ -99,8 +98,8 @@
         <option value="$PROJECT_DIR$/src/Maillon.java" />
         <option value="$PROJECT_DIR$/src/Paire.java" />
         <option value="$PROJECT_DIR$/src/Liste.java" />
-        <option value="$PROJECT_DIR$/src/Rules.java" />
         <option value="$PROJECT_DIR$/src/Principale.java" />
+        <option value="$PROJECT_DIR$/src/Rules.java" />
       </list>
     </option>
   </component>
@@ -114,8 +113,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,7 +135,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -243,7 +242,6 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.3292683" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -267,19 +265,20 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3292683" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3187251" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.16319445" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3187251" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -306,6 +305,25 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Liste.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+          <folding>
+            <element signature="method#identique#0;class#Liste#0" />
+            <element signature="method#addInHead#0;class#Liste#0" />
+            <element signature="method#addLast#0;class#Liste#0" />
+            <element signature="method#getDernierElement#0;class#Liste#0" />
+            <element signature="method#taille#0;class#Liste#0" />
+            <element signature="method#contains#0;class#Liste#0" />
+            <element signature="method#concatener#0;class#Liste#0" />
+            <element signature="method#supplesdoublons#0;class#Liste#0" />
+            <element signature="method#toString#0;class#Liste#0" />
+            <element signature="method#addTrier#0;class#Liste#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1875">
@@ -317,6 +335,7 @@
             <element signature="method#lecture_paire_fichier_lif#0;class#Principale#0" />
             <element signature="method#lecture_config_initiale_fichier_lif#0;class#Principale#0" />
             <element signature="method#recensement#0;class#Principale#0" />
+            <element signature="method#main#0;class#Principale#0" />
           </folding>
         </state>
       </provider>
@@ -332,6 +351,7 @@
             <element signature="method#lecture_paire_fichier_lif#0;class#Principale#0" />
             <element signature="method#lecture_config_initiale_fichier_lif#0;class#Principale#0" />
             <element signature="method#recensement#0;class#Principale#0" />
+            <element signature="method#main#0;class#Principale#0" />
           </folding>
         </state>
       </provider>
@@ -354,6 +374,7 @@
             <element signature="method#lecture_paire_fichier_lif#0;class#Principale#0" />
             <element signature="method#lecture_config_initiale_fichier_lif#0;class#Principale#0" />
             <element signature="method#recensement#0;class#Principale#0" />
+            <element signature="method#main#0;class#Principale#0" />
           </folding>
         </state>
       </provider>
@@ -376,6 +397,7 @@
             <element signature="method#lecture_paire_fichier_lif#0;class#Principale#0" />
             <element signature="method#lecture_config_initiale_fichier_lif#0;class#Principale#0" />
             <element signature="method#recensement#0;class#Principale#0" />
+            <element signature="method#main#0;class#Principale#0" />
           </folding>
         </state>
       </provider>
@@ -411,6 +433,7 @@
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
+            <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
             <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
@@ -443,6 +466,7 @@
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
+            <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
             <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
@@ -468,6 +492,7 @@
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
+            <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
             <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
@@ -493,6 +518,7 @@
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
+            <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
             <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
@@ -520,6 +546,7 @@
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
+            <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
             <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
@@ -548,6 +575,7 @@
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
+            <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
             <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
@@ -576,6 +604,7 @@
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
+            <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
             <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
@@ -604,6 +633,7 @@
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
+            <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
             <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
@@ -632,6 +662,7 @@
             <element signature="method#addLast#0;class#Liste#0" />
             <element signature="method#getDernierElement#0;class#Liste#0" />
             <element signature="method#taille#0;class#Liste#0" />
+            <element signature="method#contains#0;class#Liste#0" />
             <element signature="method#concatener#0;class#Liste#0" />
             <element signature="method#supplesdoublons#0;class#Liste#0" />
             <element signature="method#toString#0;class#Liste#0" />
@@ -657,28 +688,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Maillon.java" />
     <entry file="file://$PROJECT_DIR$/src/Paire.java" />
-    <entry file="file://$PROJECT_DIR$/src/Liste.java">
+    <entry file="file://$PROJECT_DIR$/src/Lecture.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        <state relative-caret-position="30">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="69" column="77" selection-start-line="69" selection-start-column="77" selection-end-line="69" selection-end-column="77" />
           <folding>
-            <element signature="method#identique#0;class#Liste#0" />
-            <element signature="method#addInHead#0;class#Liste#0" />
-            <element signature="method#addLast#0;class#Liste#0" />
-            <element signature="method#getDernierElement#0;class#Liste#0" />
-            <element signature="method#taille#0;class#Liste#0" />
-            <element signature="method#concatener#0;class#Liste#0" />
-            <element signature="method#supplesdoublons#0;class#Liste#0" />
-            <element signature="method#toString#0;class#Liste#0" />
-            <element signature="method#addTrier#0;class#Liste#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#grille#0;class#Principale#0" />
+            <element signature="method#aff_grille#0;class#Principale#0" />
+            <element signature="method#lecture_paire_fichier_lif#0;class#Principale#0" />
+            <element signature="method#lecture_config_initiale_fichier_lif#0;class#Principale#0" />
+            <element signature="method#recensement#0;class#Principale#0" />
+            <element signature="method#main#0;class#Principale#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Rules.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="321" column="13" selection-start-line="321" selection-start-column="13" selection-end-line="321" selection-end-column="13" />
+        <state relative-caret-position="390">
+          <caret line="323" column="1" selection-start-line="323" selection-start-column="1" selection-end-line="323" selection-end-column="1" />
           <folding>
             <element signature="method#lecture_regles_fichier_lif#0;class#Rules#0" />
             <element signature="method#NombreVoisin#0;class#Rules#0" />
@@ -689,24 +725,27 @@
             <element signature="method#extraire_nb_pour_survivre#0;class#Rules#0" />
             <element signature="method#extraire_nb_pour_naitre#0;class#Rules#0" />
             <element signature="method#verif_regles#0;class#Rules#0" />
-            <element signature="method#période#0;class#Rules#0" />
-            <element signature="method#retournetouslesvoisinsmorts#0;class#Rules#0" />
-            <element signature="method#verifierVoisinsretournecellulesvivantes#0;class#Rules#0" />
+            <element signature="method#periode#0;class#Rules#0" />
+            <element signature="method#comportement#0;class#Rules#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+    <entry file="file://$PROJECT_DIR$/src/Liste.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="69" column="77" selection-start-line="69" selection-start-column="77" selection-end-line="69" selection-end-column="77" />
+        <state relative-caret-position="195">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#grille#0;class#Principale#0" />
-            <element signature="method#aff_grille#0;class#Principale#0" />
-            <element signature="method#lecture_paire_fichier_lif#0;class#Principale#0" />
-            <element signature="method#lecture_config_initiale_fichier_lif#0;class#Principale#0" />
-            <element signature="method#recensement#0;class#Principale#0" />
+            <element signature="method#identique#0;class#Liste#0" />
+            <element signature="method#addInHead#0;class#Liste#0" />
+            <element signature="method#addLast#0;class#Liste#0" />
+            <element signature="method#getDernierElement#0;class#Liste#0" />
+            <element signature="method#taille#0;class#Liste#0" />
+            <element signature="method#contains#0;class#Liste#0" />
+            <element signature="method#concatener#0;class#Liste#0" />
+            <element signature="method#supplesdoublons#0;class#Liste#0" />
+            <element signature="method#toString#0;class#Liste#0" />
+            <element signature="method#addTrier#0;class#Liste#0" />
           </folding>
         </state>
       </provider>
