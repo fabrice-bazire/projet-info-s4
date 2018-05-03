@@ -1,7 +1,9 @@
+package Projet;
+
 import java.util.*;
 
 /**
- * Paire est la classe représentant une cellule.
+ * Projet.Paire est la classe représentant une cellule.
  */
 public class Paire implements Comparable<Paire>{
     static Scanner in = new Scanner (System.in);
@@ -20,7 +22,7 @@ public class Paire implements Comparable<Paire>{
     public int nbv;
 
     /**
-     *Constructeur Paire
+     *Constructeur Projet.Paire
      * @param x
      * La valeur de l'abscisse de la paire.
      * @param y

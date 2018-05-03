@@ -8,12 +8,40 @@
   <component name="ChangeListManager">
     <list default="true" id="f8907bfa-5b60-4a60-8247-0ae306c57d12" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Maillon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Maillon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Paire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Paire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Principale.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principale.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Principale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rules.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rules.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Liste.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Liste.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Maillon.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Maillon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Paire.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Paire.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Testjeudelaviedebase.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Testjeudelaviedebase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/allclasses-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Liste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Liste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Maillon.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Maillon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Paire.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Paire.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Projet/Maillon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Projet/Paire.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Projet/Principale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Projet/Rules.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/a.lif" beforeDir="false" afterPath="$PROJECT_DIR$/src/a.lif" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,41 +53,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Rules.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Rules.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="433" column="7" selection-start-line="433" selection-start-column="7" selection-end-line="433" selection-end-column="7" />
-              <folding>
-                <element signature="docComment;method#lecture_regles_fichier_lif#0;class#Rules#0" />
-                <element signature="method#lecture_regles_fichier_lif#0;class#Rules#0" />
-                <element signature="docComment;method#NombreVoisin#0;class#Rules#0" />
-                <element signature="method#NombreVoisin#0;class#Rules#0" />
-                <element signature="docComment;method#mortedevenantvivantes#0;class#Rules#0" />
-                <element signature="method#mortedevenantvivantes#0;class#Rules#0" />
-                <element signature="docComment;method#vivantsquirestentvivants#0;class#Rules#0" />
-                <element signature="method#vivantsquirestentvivants#0;class#Rules#0" />
-                <element signature="docComment;method#newgeneration#0;class#Rules#0" />
-                <element signature="method#newgeneration#0;class#Rules#0" />
-                <element signature="docComment;method#taille_queue#0;class#Rules#0" />
-                <element signature="method#taille_queue#0;class#Rules#0" />
-                <element signature="docComment;method#extraire_nb_pour_survivre#0;class#Rules#0" />
-                <element signature="method#extraire_nb_pour_survivre#0;class#Rules#0" />
-                <element signature="docComment;method#extraire_nb_pour_naitre#0;class#Rules#0" />
-                <element signature="method#extraire_nb_pour_naitre#0;class#Rules#0" />
-                <element signature="docComment;method#verif_regles#0;class#Rules#0" />
-                <element signature="method#verif_regles#0;class#Rules#0" />
-                <element signature="docComment;method#periode#0;class#Rules#0" />
-                <element signature="method#periode#0;class#Rules#0" />
-                <element signature="docComment;method#comportement#0;class#Rules#0" />
-                <element signature="method#comportement#0;class#Rules#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <replaceStrings>
@@ -77,14 +71,14 @@
         <option value="$PROJECT_DIR$/src/Maillon.java" />
         <option value="$PROJECT_DIR$/src/Paire.java" />
         <option value="$PROJECT_DIR$/src/Rules.java" />
+        <option value="$PROJECT_DIR$/src/Projet/Liste.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="707" />
     <option name="y" value="23" />
-    <option name="width" value="733" />
-    <option name="height" value="831" />
+    <option name="width" value="1440" />
+    <option name="height" value="827" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -112,9 +106,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -125,7 +119,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -141,12 +135,12 @@
   </component>
   <component name="RunManager" selected="Application.Principale">
     <configuration name="Principale" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Principale" />
+      <option name="MAIN_CLASS_NAME" value="Projet.Principale" />
       <module name="projet-info-s4" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration name="Rules" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Rules" />
+      <option name="MAIN_CLASS_NAME" value="Projet.Rules" />
       <module name="projet-info-s4" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -216,11 +210,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="707" y="23" width="733" height="831" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="827" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info x="217" y="84" width="475" height="753" id="simpleUML" order="2" type="WINDOWED" weight="0.3298611" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
@@ -231,7 +225,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17735334" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22777778" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -245,7 +239,7 @@
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32802126" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -257,224 +251,217 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Liste.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1875">
           <caret line="125" column="21" selection-start-line="125" selection-start-column="21" selection-end-line="125" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1935">
           <caret line="129" column="8" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rules.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Rules.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5265">
           <caret line="351" lean-forward="true" selection-start-line="351" selection-end-line="351" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1920">
           <caret line="128" column="30" selection-start-line="128" selection-start-column="30" selection-end-line="128" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rules.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Rules.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
           <caret line="275" column="13" lean-forward="true" selection-start-line="275" selection-start-column="13" selection-end-line="275" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="45" column="41" lean-forward="true" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rules.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Rules.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1005">
           <caret line="190" column="47" selection-start-line="190" selection-start-column="47" selection-end-line="190" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
           <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rules.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Rules.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1005">
           <caret line="190" column="47" selection-start-line="190" selection-start-column="47" selection-end-line="190" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Liste.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Liste.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1410">
           <caret line="94" column="31" lean-forward="true" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rules.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Rules.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="194" column="70" selection-start-line="194" selection-start-column="70" selection-end-line="194" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Liste.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Liste.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Liste.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Liste.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Liste.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Liste.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Paire.java" />
-    <entry file="file://$PROJECT_DIR$/src/Maillon.java" />
-    <entry file="file://$PROJECT_DIR$/src/Liste.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Paire.java" />
+    <entry file="file://$PROJECT_DIR$/src/Projet/Maillon.java" />
+    <entry file="file://$PROJECT_DIR$/src/Projet/Liste.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rules.java" />
-    <entry file="file://$PROJECT_DIR$/src/Paire.java" />
-    <entry file="file://$PROJECT_DIR$/src/Maillon.java" />
-    <entry file="file://$PROJECT_DIR$/src/Liste.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Rules.java" />
+    <entry file="file://$PROJECT_DIR$/src/Projet/Paire.java" />
+    <entry file="file://$PROJECT_DIR$/src/Projet/Maillon.java" />
+    <entry file="file://$PROJECT_DIR$/src/Projet/Liste.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rules.java" />
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Rules.java" />
+    <entry file="file://$PROJECT_DIR$/src/Projet/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
           <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Paire.java" />
-    <entry file="file://$PROJECT_DIR$/src/Maillon.java" />
-    <entry file="file://$PROJECT_DIR$/src/Liste.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Paire.java" />
+    <entry file="file://$PROJECT_DIR$/src/Projet/Maillon.java" />
+    <entry file="file://$PROJECT_DIR$/src/Projet/Liste.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
           <caret line="169" column="9" selection-start-line="169" selection-start-column="9" selection-end-line="169" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rules.java" />
-    <entry file="file://$PROJECT_DIR$/src/Paire.java" />
-    <entry file="file://$PROJECT_DIR$/src/Maillon.java" />
-    <entry file="file://$PROJECT_DIR$/src/Liste.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Rules.java" />
+    <entry file="file://$PROJECT_DIR$/src/Projet/Paire.java" />
+    <entry file="file://$PROJECT_DIR$/src/Projet/Maillon.java" />
+    <entry file="file://$PROJECT_DIR$/src/Projet/Liste.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
           <caret line="169" column="9" selection-start-line="169" selection-start-column="9" selection-end-line="169" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rules.java" />
-    <entry file="file://$PROJECT_DIR$/src/Paire.java" />
-    <entry file="file://$PROJECT_DIR$/src/Maillon.java" />
-    <entry file="file://$PROJECT_DIR$/src/Liste.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Rules.java" />
+    <entry file="file://$PROJECT_DIR$/src/Projet/Paire.java" />
+    <entry file="file://$PROJECT_DIR$/src/Projet/Maillon.java" />
+    <entry file="file://$PROJECT_DIR$/src/Projet/Liste.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
           <caret line="169" column="9" selection-start-line="169" selection-start-column="9" selection-end-line="169" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rules.java" />
+    <entry file="file://$PROJECT_DIR$/src/Projet/Rules.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -483,38 +470,38 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lecture.java" />
-    <entry file="file://$PROJECT_DIR$/src/Liste.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Liste.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="152" column="16" lean-forward="true" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="16" />
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maillon.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Maillon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="117" column="7" selection-start-line="117" selection-start-column="7" selection-end-line="117" selection-end-column="7" />
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Paire.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="99" column="7" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="7" />
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Principale.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Paire.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="154" column="16" lean-forward="true" selection-start-line="154" selection-start-column="16" selection-end-line="154" selection-end-column="16" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rules.java">
+    <entry file="file://$PROJECT_DIR$/src/Projet/Rules.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="433" column="7" selection-start-line="433" selection-start-column="7" selection-end-line="433" selection-end-column="7" />
+        <state relative-caret-position="15">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="docComment;method#lecture_regles_fichier_lif#0;class#Rules#0" />
             <element signature="method#lecture_regles_fichier_lif#0;class#Rules#0" />
@@ -541,6 +528,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/a.lif">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
@@ -618,5 +608,56 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="simpleUML.UMLToolWindowPlugin">
+    <General>
+      <option name="birdViewUpdateDelay" value="2000" />
+      <option name="knownFile0" value="file://$PROJECT_DIR$/../Projet.suml" />
+      <option name="defaultFileLocation" value="file://$PROJECT_DIR$/.." />
+    </General>
+    <Classdiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="defaultFieldsExpanded" value="false" />
+      <option name="defaultContructorsExpanded" value="false" />
+      <option name="defaultMethodsExpanded" value="false" />
+      <option name="showParameters" value="true" />
+      <option name="showTooltip" value="true" />
+      <option name="showReturnValues" value="true" />
+      <option name="longModifier" value="true" />
+      <option name="implementsBehaviour" value="1" />
+      <option name="extendsBehaviour" value="1" />
+      <option name="compartmentBehaviour" value="1" />
+      <option name="interfaceBackgroundColor" value="-6494306" />
+      <option name="abstractClassBackgroundColor" value="-1580132" />
+      <option name="classBackgroundColor" value="-6508057" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="quickSourceLinkColor" value="-16776961" />
+      <option name="quickDiagramLinkColor" value="-8454144" />
+      <option name="drawDecorations" value="false" />
+      <option name="hideFieldList" value="" />
+      <option name="showFieldList" value="" />
+      <option name="hideConstructorList" value="" />
+      <option name="showConstructorList" value="" />
+      <option name="hideMethodList" value="" />
+      <option name="showMethodList" value="" />
+      <option name="minimumFigureSize" value="0,0" />
+    </Classdiagram>
+    <Dependencydiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="0" />
+    </Dependencydiagram>
+    <Packagediagram>
+      <option name="diagramTitleFont" value="SansSerif,0,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="packageBackgroundColor" value="-4144960" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="2" />
+    </Packagediagram>
   </component>
 </project>

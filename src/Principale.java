@@ -1,3 +1,8 @@
+package Projet;
+
+import Projet.Liste;
+import Projet.Maillon;
+
 import java.io.*;
 import java.util.Scanner;
 
@@ -106,7 +111,7 @@ public class Principale {
     x = ligne.toCharArray();
     for (int i = 0; i < ligne.length(); i++){
       if (x[i] == '*'){
-        ar.addTrier(new Paire (numligne, i+coin.getx(), 0));
+        ar.addTrier(new Paire(numligne, i+coin.getx(), 0));
       }
     }
   }catch(Exception e) {

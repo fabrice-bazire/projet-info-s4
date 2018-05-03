@@ -1,10 +1,12 @@
+package Projet;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
 /**
- * <b>Rules est la classe qui recense les regles du jeu de la vie</b>
+ * <b>Projet.Rules est la classe qui recense les regles du jeu de la vie</b>
  */
 public class Rules {
     public Liste<Paire> liste;
@@ -192,40 +194,40 @@ public class Rules {
      * @param tab
      * @return
      */
-    /*public Liste vivantsquirestentvivants(Liste t, int[] tab) {
-        Liste lesvoisinsvivants = new Liste();
-        Maillon<Paire> ref = t.tete;
+    /*public Projet.Liste vivantsquirestentvivants(Projet.Liste t, int[] tab) {
+        Projet.Liste lesvoisinsvivants = new Projet.Liste();
+        Projet.Maillon<Projet.Paire> ref = t.tete;
         while (ref != null) {
             for (int i = 0; i < tab.length; i++) {
-                Paire p1 = new Paire(ref.getValeur().getx() - 1, ref.getValeur().gety() + 1, 0);
+                Projet.Paire p1 = new Projet.Paire(ref.getValeur().getx() - 1, ref.getValeur().gety() + 1, 0);
                 if ((NombreVoisin(t, p1) == tab[i]) && !lesvoisinsvivants.contains(p1) && t.contains(p1)) {
                     lesvoisinsvivants.addTrier(p1); // ou ref car on est pas sur de pouvoir ajoute direct une paire
                 }
-                Paire p2 = new Paire(ref.getValeur().getx(), ref.getValeur().gety() + 1, 0);
+                Projet.Paire p2 = new Projet.Paire(ref.getValeur().getx(), ref.getValeur().gety() + 1, 0);
                 if ((NombreVoisin(t, p2) == tab[i]) && !lesvoisinsvivants.contains(p2) && t.contains(p2)) {
                     lesvoisinsvivants.addTrier(p2); // ou ref car on est pas sur de pouvoir ajoute direct une paire
                 }
-                Paire p3 = new Paire(ref.getValeur().getx() + 1, ref.getValeur().gety() + 1, 0);
+                Projet.Paire p3 = new Projet.Paire(ref.getValeur().getx() + 1, ref.getValeur().gety() + 1, 0);
                 if ((NombreVoisin(t, p3) == tab[i]) && !lesvoisinsvivants.contains(p3) && t.contains(p3)) {
                     lesvoisinsvivants.addTrier(p3); // ou ref car on est pas sur de pouvoir ajoute direct une paire
                 }
-                Paire p4 = new Paire(ref.getValeur().getx() - 1, ref.getValeur().gety(), 0);
+                Projet.Paire p4 = new Projet.Paire(ref.getValeur().getx() - 1, ref.getValeur().gety(), 0);
                 if ((NombreVoisin(t, p4) == tab[i]) && !lesvoisinsvivants.contains(p4) && t.contains(p4)) {
                     lesvoisinsvivants.addTrier(p4); // ou ref car on est pas sur de pouvoir ajoute direct une paire
                 }
-                Paire p5 = new Paire(ref.getValeur().getx() + 1, ref.getValeur().gety(), 0);
+                Projet.Paire p5 = new Projet.Paire(ref.getValeur().getx() + 1, ref.getValeur().gety(), 0);
                 if ((NombreVoisin(t, p5) == tab[i]) && !lesvoisinsvivants.contains(p5) && t.contains(p5)) {
                     lesvoisinsvivants.addTrier(p5); // ou ref car on est pas sur de pouvoir ajoute direct une paire
                 }
-                Paire p6 = new Paire(ref.getValeur().getx() - 1, ref.getValeur().gety() - 1, 0);
+                Projet.Paire p6 = new Projet.Paire(ref.getValeur().getx() - 1, ref.getValeur().gety() - 1, 0);
                 if ((NombreVoisin(t, p6) == tab[i]) && !lesvoisinsvivants.contains(p6) && t.contains(p6)) {
                     lesvoisinsvivants.addTrier(p6); // ou ref car on est pas sur de pouvoir ajoute direct une paire
                 }
-                Paire p7 = new Paire(ref.getValeur().getx(), ref.getValeur().gety() - 1, 0);
+                Projet.Paire p7 = new Projet.Paire(ref.getValeur().getx(), ref.getValeur().gety() - 1, 0);
                 if ((NombreVoisin(t, p7) == tab[i]) && !lesvoisinsvivants.contains(p7) && t.contains(p7)) {
                     lesvoisinsvivants.addTrier(p7); // ou ref car on est pas sur de pouvoir ajoute direct une paire
                 }
-                Paire p8 = new Paire(ref.getValeur().getx() + 1, ref.getValeur().gety() - 1, 0);
+                Projet.Paire p8 = new Projet.Paire(ref.getValeur().getx() + 1, ref.getValeur().gety() - 1, 0);
                 if ((NombreVoisin(t, p8) == tab[i]) && !lesvoisinsvivants.contains(p8) && t.contains(p8)) {
                     lesvoisinsvivants.addTrier(p8); // ou ref car on est pas sur de pouvoir ajoute direct une paire
                 }
