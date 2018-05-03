@@ -6,7 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8907bfa-5b60-4a60-8247-0ae306c57d12" name="Default" comment="" />
+    <list default="true" id="f8907bfa-5b60-4a60-8247-0ae306c57d12" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Maillon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Maillon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Paire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Paire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Principale.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principale.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Principale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rules.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rules.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/a.lif" beforeDir="false" afterPath="$PROJECT_DIR$/src/a.lif" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +25,41 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Rules.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Rules.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1260">
+              <caret line="433" column="7" selection-start-line="433" selection-start-column="7" selection-end-line="433" selection-end-column="7" />
+              <folding>
+                <element signature="docComment;method#lecture_regles_fichier_lif#0;class#Rules#0" />
+                <element signature="method#lecture_regles_fichier_lif#0;class#Rules#0" />
+                <element signature="docComment;method#NombreVoisin#0;class#Rules#0" />
+                <element signature="method#NombreVoisin#0;class#Rules#0" />
+                <element signature="docComment;method#mortedevenantvivantes#0;class#Rules#0" />
+                <element signature="method#mortedevenantvivantes#0;class#Rules#0" />
+                <element signature="docComment;method#vivantsquirestentvivants#0;class#Rules#0" />
+                <element signature="method#vivantsquirestentvivants#0;class#Rules#0" />
+                <element signature="docComment;method#newgeneration#0;class#Rules#0" />
+                <element signature="method#newgeneration#0;class#Rules#0" />
+                <element signature="docComment;method#taille_queue#0;class#Rules#0" />
+                <element signature="method#taille_queue#0;class#Rules#0" />
+                <element signature="docComment;method#extraire_nb_pour_survivre#0;class#Rules#0" />
+                <element signature="method#extraire_nb_pour_survivre#0;class#Rules#0" />
+                <element signature="docComment;method#extraire_nb_pour_naitre#0;class#Rules#0" />
+                <element signature="method#extraire_nb_pour_naitre#0;class#Rules#0" />
+                <element signature="docComment;method#verif_regles#0;class#Rules#0" />
+                <element signature="method#verif_regles#0;class#Rules#0" />
+                <element signature="docComment;method#periode#0;class#Rules#0" />
+                <element signature="method#periode#0;class#Rules#0" />
+                <element signature="docComment;method#comportement#0;class#Rules#0" />
+                <element signature="method#comportement#0;class#Rules#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <replaceStrings>
@@ -29,18 +72,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Maillon.java" />
-        <option value="$PROJECT_DIR$/src/Paire.java" />
         <option value="$PROJECT_DIR$/src/Liste.java" />
         <option value="$PROJECT_DIR$/src/Principale.java" />
+        <option value="$PROJECT_DIR$/src/Maillon.java" />
+        <option value="$PROJECT_DIR$/src/Paire.java" />
         <option value="$PROJECT_DIR$/src/Rules.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="707" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="827" />
+    <option name="width" value="733" />
+    <option name="height" value="831" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -48,9 +92,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -71,6 +112,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -172,83 +216,37 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="23" width="1346" height="688" extended-state="0" />
+    <frame x="707" y="23" width="733" height="831" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24294205" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info id="Designer" order="3" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.71447545" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.3292683" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17777778" />
-    </layout>
-    <layout-to-restore>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16319445" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3187251" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.3292683" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17735334" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-    </layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3292683" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
+    </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -484,27 +482,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Maillon.java" />
-    <entry file="file://$PROJECT_DIR$/src/Paire.java" />
     <entry file="file://$PROJECT_DIR$/src/Lecture.java" />
     <entry file="file://$PROJECT_DIR$/src/Liste.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="183">
           <caret line="152" column="16" lean-forward="true" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Maillon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="117" column="7" selection-start-line="117" selection-start-column="7" selection-end-line="117" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Paire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="99" column="7" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Principale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="142" column="48" selection-start-line="142" selection-start-column="48" selection-end-line="142" selection-end-column="48" />
+        <state relative-caret-position="88">
+          <caret line="154" column="16" lean-forward="true" selection-start-line="154" selection-start-column="16" selection-end-line="154" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Rules.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-407">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        <state relative-caret-position="1260">
+          <caret line="433" column="7" selection-start-line="433" selection-start-column="7" selection-end-line="433" selection-end-column="7" />
+          <folding>
+            <element signature="docComment;method#lecture_regles_fichier_lif#0;class#Rules#0" />
+            <element signature="method#lecture_regles_fichier_lif#0;class#Rules#0" />
+            <element signature="docComment;method#NombreVoisin#0;class#Rules#0" />
+            <element signature="method#NombreVoisin#0;class#Rules#0" />
+            <element signature="docComment;method#mortedevenantvivantes#0;class#Rules#0" />
+            <element signature="method#mortedevenantvivantes#0;class#Rules#0" />
+            <element signature="docComment;method#vivantsquirestentvivants#0;class#Rules#0" />
+            <element signature="method#vivantsquirestentvivants#0;class#Rules#0" />
+            <element signature="docComment;method#newgeneration#0;class#Rules#0" />
+            <element signature="method#newgeneration#0;class#Rules#0" />
+            <element signature="docComment;method#taille_queue#0;class#Rules#0" />
+            <element signature="method#taille_queue#0;class#Rules#0" />
+            <element signature="docComment;method#extraire_nb_pour_survivre#0;class#Rules#0" />
+            <element signature="method#extraire_nb_pour_survivre#0;class#Rules#0" />
+            <element signature="docComment;method#extraire_nb_pour_naitre#0;class#Rules#0" />
+            <element signature="method#extraire_nb_pour_naitre#0;class#Rules#0" />
+            <element signature="docComment;method#verif_regles#0;class#Rules#0" />
+            <element signature="method#verif_regles#0;class#Rules#0" />
+            <element signature="docComment;method#periode#0;class#Rules#0" />
+            <element signature="method#periode#0;class#Rules#0" />
+            <element signature="docComment;method#comportement#0;class#Rules#0" />
+            <element signature="method#comportement#0;class#Rules#0" />
+          </folding>
         </state>
       </provider>
     </entry>

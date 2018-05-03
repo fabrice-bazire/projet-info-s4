@@ -159,5 +159,28 @@ public class Principale {
             System.out.println("generation n°" + i);
           }
         }
+        if (args[0].equals("-c")){
+            int duree_max = Integer.parseInt(args[1]);
+            f = args[2];
+            int i = 0;
+            Rules a = new Rules();
+            Liste dep = lecture_config_initiale_fichier_lif (lecture_paire_fichier_lif (f), f);
+            a.liste = dep;
+            int [] x = (a.extraire_nb_pour_naitre(a.lecture_regles_fichier_lif()));
+            int [] y = (a.extraire_nb_pour_survivre(a.lecture_regles_fichier_lif()));
+            if (a.periode(a.liste, duree_max) == 0){
+                System.out.print("\n\n\nLe Temps max entré étant trop petit, aucune période n'a pu être obtenu,  et de ce fait aucun comportement n'as pu etre défini !!\n\n\n");
+            }else {
+                System.out.print(a.comportement(a.liste, a.periode(a.liste, duree_max), a.taille_queue(a.liste, a.periode(a.liste, duree_max))));
+            }
+        }
+        if (args[0].equals("-queue")){
+            int max = Integer.parseInt(args[1]);
+            f = args[2];
+            Rules a = new Rules();
+            Liste dep = lecture_config_initiale_fichier_lif (lecture_paire_fichier_lif (f), f);
+            a.liste = dep;
+            System.out.println("\n\n\n" + a.taille_queue(a.liste, a.periode(a.liste, max)));
+        }
     }
 }
