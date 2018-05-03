@@ -27,7 +27,7 @@ public class Rules {
         String i;
         char[] x;
         try {
-            FileReader f = new FileReader(this.fichier);
+            FileReader f = new FileReader("lif/b.lif");
             BufferedReader b = new BufferedReader(f);
             String s = " ";
             while ((s = b.readLine()) != null) {
@@ -407,18 +407,41 @@ public class Rules {
         if (initiale.identique(suivante)) {
             return 1;
         }
-        while (max != 0) {
+        while(max != 0) {
             periode++;
             initiale = newgeneration(initiale);
             suivante = newgeneration(suivante);
             suivante = newgeneration(suivante);
             max--;
             if (initiale.identique(suivante)) {
-                return (periode+1);
+                return periode;
             }
         }
         return 0; //si la methode retourne 0, cela signifie que la periode n'as pas ete trouvé dans le temps max donné
      }
+
+     int periode(Liste t) {
+        Liste initiale;
+        Liste suivante;
+        int periode = 0;
+        boolean sameconfig = false;
+        initiale = t;
+        suivante = newgeneration(t);
+        if (initiale.identique(suivante)) {
+            return periode;
+        }
+        while (!sameconfig) {
+            periode++;
+            initiale = newgeneration(initiale);
+            suivante = newgeneration(suivante);
+            suivante = newgeneration(suivante);
+            if (initiale.identique(suivante)) {
+                sameconfig = true;
+                periode++;
+            }
+        }
+        return periode;
+    }
 
     /**
      * Retourne le comportement asymptotique de la liste en parametre

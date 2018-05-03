@@ -100,17 +100,17 @@ public class Principale {
 }
 
     public static Liste recensement (Paire coin, String ligne, int numligne){
-  Liste ar = new Liste();
-  char [] x;
-  try {
-    x = ligne.toCharArray();
-    for (int i = 0; i < ligne.length(); i++){
-      if (x[i] == '*'){
-        ar.addTrier(new Paire (numligne, i+coin.getx(), 0));
-      }
-    }
-  }catch(Exception e) {
-          System.out.print(e.getMessage());
+    Liste ar = new Liste();
+    char [] x;
+    try {
+        x = ligne.toCharArray();
+        for (int i = 0; i < ligne.length(); i++){
+            if (x[i] == '*'){
+                ar.addTrier(new Paire (numligne, i+coin.getx(), 0));
+            }
+        }
+    }catch(Exception e) {
+        System.out.print(e.getMessage());
     }
     return ar;
 }
@@ -162,16 +162,40 @@ public class Principale {
         if (args[0].equals("-c")){
             int duree_max = Integer.parseInt(args[1]);
             f = args[2];
-            int i = 0;
             Rules a = new Rules();
             Liste dep = lecture_config_initiale_fichier_lif (lecture_paire_fichier_lif (f), f);
             a.liste = dep;
             int [] x = (a.extraire_nb_pour_naitre(a.lecture_regles_fichier_lif()));
             int [] y = (a.extraire_nb_pour_survivre(a.lecture_regles_fichier_lif()));
-            if (a.periode(a.liste, duree_max) == 0){
+            if (a.periode(a.liste) == 0){
                 System.out.print("\n\n\nLe Temps max entré étant trop petit, aucune période n'a pu être obtenu,  et de ce fait aucun comportement n'as pu etre défini !!\n\n\n");
             }else {
-                System.out.print(a.comportement(a.liste, a.periode(a.liste, duree_max), a.taille_queue(a.liste, a.periode(a.liste, duree_max))));
+                System.out.print(a.comportement(a.liste, a.periode(a.liste), a.taille_queue(a.liste, a.periode(a.liste))));
+            }
+        }
+        if (args[0].equals("-w")){
+            int duree_max = Integer.parseInt(args[1]);
+            String dossier = args[2];
+            File repertoire = new File(dossier);
+            File[] files=repertoire.listFiles();
+            String [] fileNames = new String[files.length];
+            for (int i = 0; i < files.length; i++) {
+                fileNames[i] = files[i].getName();
+            }
+            Rules a = new Rules();
+            for (int i = 0; i < fileNames.length; i++) {
+                System.out.println("\n\n\n");
+                f = dossier + "/" + fileNames[i];
+                System.out.print(f);
+                a.liste = lecture_config_initiale_fichier_lif (lecture_paire_fichier_lif (f), f);
+                int [] x = (a.extraire_nb_pour_naitre(a.lecture_regles_fichier_lif()));
+                int [] y = (a.extraire_nb_pour_survivre(a.lecture_regles_fichier_lif()));
+                if (a.periode(a.liste) == 0){
+                    System.out.print("\n\n\nLe Temps max entré étant trop petit, aucune période n'a pu être obtenu,  et de ce fait aucun comportement n'as pu etre défini !!\n\n\n");
+                }else {
+                    System.out.print(a.comportement(a.liste, a.periode(a.liste), a.taille_queue(a.liste, a.periode(a.liste))));
+                }
+                System.out.println("\n\n\n");
             }
         }
         if (args[0].equals("-queue")){
@@ -180,7 +204,7 @@ public class Principale {
             Rules a = new Rules();
             Liste dep = lecture_config_initiale_fichier_lif (lecture_paire_fichier_lif (f), f);
             a.liste = dep;
-            System.out.println("\n\n\n" + a.taille_queue(a.liste, a.periode(a.liste, max)));
+            System.out.println("\n\n\n" + a.taille_queue(a.liste, a.periode(a.liste)));
         }
     }
 }
