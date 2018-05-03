@@ -5,7 +5,14 @@
 #N
 
 #P 2 2
+<<<<<<< HEAD
 ....*
 ...*.*.
 ..*...*
 .**.*.**
+=======
+......
+...*
+...*
+...*.
+>>>>>>> parent of a4c55b4... javadoc quasi complete + taille de la queue fonctionne + -s et -c fonctionne
