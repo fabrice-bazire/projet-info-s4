@@ -1,24 +1,26 @@
-<<<<<<< HEAD
-package Projet;
-
 import java.util.*;
 
 /**
- * Projet.Paire est la classe représentant une cellule.
+ * Paire est la classe représentant une cellule.
  */
-=======
-
-import java.util.*;
-
->>>>>>> parent of a4c55b4... javadoc quasi complete + taille de la queue fonctionne + -s et -c fonctionne
 public class Paire implements Comparable<Paire>{
     static Scanner in = new Scanner (System.in);
 
-    public int x, y, nbv;
-
-<<<<<<< HEAD
     /**
-     *Constructeur Projet.Paire
+     * Représente la valeur de l'abscisse de la paire.
+     */
+    public int x ;
+    /**
+     * Représente la valeur de l'ordonnée de la paire.
+     */
+    public int y;
+    /**
+     * Représente le nombre de voisins de la paire.
+     */
+    public int nbv;
+
+    /**
+     *Constructeur Paire
      * @param x
      * La valeur de l'abscisse de la paire.
      * @param y
@@ -27,15 +29,15 @@ public class Paire implements Comparable<Paire>{
      * Le nombre de voisins de la paire.
      */
      public Paire(int x, int y, int voisins){
-=======
-    public Paire(int x, int y, int voisins){
->>>>>>> parent of a4c55b4... javadoc quasi complete + taille de la queue fonctionne + -s et -c fonctionne
         this.x = x;
         this.y = y;
         this.nbv = voisins;
     }
 
-    public Paire(){
+    /**
+     * Attribut a chaque paire sa coordonnée (abscisse, ordonnee) et le nombre de ses voisins initié à 0
+     */
+     public Paire(){
         System.out.print("Entrez x : ");
         int x = in.nextInt();
         this.x = x;
@@ -45,6 +47,13 @@ public class Paire implements Comparable<Paire>{
         this.nbv= 0;
     }
 
+    /**
+     * Vérifie si la paire this est égale à une autre paire.
+     * @param o
+     *un objet o
+     * @return un booléen vrai si l'objet passé en paramètre est identique à la paire this.
+     *
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -59,19 +68,36 @@ public class Paire implements Comparable<Paire>{
         return Objects.hash(x, y);
     }
 
+    /**
+     * Retourne l'abscisse de la paire.
+     * @return l'abscisse de la paire sous forme d'entier.
+     */
     public int getx(){
         return this.x;
     }
 
+    /**
+     *  Retourne l'ordonnée de la paire.
+     * @return l'ordonnée de la paire sous forme d'entier.
+     */
     public int gety(){
         return this.y;
     }
 
+    /**
+     *  Retourne l'ordonnée de la paire.
+     * @return l'ordonnée de la paire sous forme d'entier.
+     */
     public String toString(){
         return ("(" + x + ";" + y +")");
     }
 
-
+    /**
+     * Compare les coordonnées de la paire this avec une autre paire.
+     * @param p
+     * Une paire
+     * @return un entier , 1 si la la paire this est plus grande que la paire passée en paramètre, -1 pour l'inverse et 0 si elles sont égales.
+     */
     public int compareTo(Paire p) {
         if (this.getx() < p.getx()){
             return -1 ;
