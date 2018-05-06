@@ -116,23 +116,6 @@ public class Principale {
 }
 
     public static void main (String [] args){
-        if (args[0].equals("-game")){
-            Rules a = new Rules();
-            Liste dep = lecture_config_initiale_fichier_lif (lecture_paire_fichier_lif ("fichier.lif"), "fichier.lif");
-            a.liste = dep;
-            int [] x = (a.extraire_nb_pour_naitre(a.lecture_regles_fichier_lif()));
-            int [] y = (a.extraire_nb_pour_survivre(a.lecture_regles_fichier_lif()));
-            System.out.println(dep);
-            aff_grille(grille(a.liste, "fichier.lif"));
-            System.out.println(" ");
-            a.liste = a.newgeneration(a.liste);
-            aff_grille(grille(a.liste, "fichier.lif"));
-            //System.out.println(a.liste);
-            System.out.println(" ");
-            a.liste = a.newgeneration(a.liste);
-            //System.out.println(a.liste);
-            aff_grille(grille(a.liste, "fichier.lif"));
-        }
         if (args[0].equals("-name")) {
             System.out.println("Cécile, Amina, Martin et Fabrice");
         }
@@ -176,8 +159,12 @@ public class Principale {
         if (args[0].equals("-w")){
             int duree_max = Integer.parseInt(args[1]);
             String dossier = args[2];
-            File repertoire = new File(dossier);
-            File[] files=repertoire.listFiles();
+            File dir = new File(dossier);
+            File[] files = dir.listFiles(new FilenameFilter() {
+                public boolean accept(File dir, String name) {
+                    return name.toLowerCase().endsWith(".lif");
+                    }
+            });
             String [] fileNames = new String[files.length];
             for (int i = 0; i < files.length; i++) {
                 fileNames[i] = files[i].getName();
@@ -185,8 +172,8 @@ public class Principale {
             Rules a = new Rules();
             for (int i = 0; i < fileNames.length; i++) {
                 System.out.println("\n\n\n");
-                f = dossier + "/" + fileNames[i];
-                System.out.print(f);
+                f = fileNames[i];
+                System.out.print("\n\n\n" + f + "\n\n\n");
                 a.liste = lecture_config_initiale_fichier_lif (lecture_paire_fichier_lif (f), f);
                 int [] x = (a.extraire_nb_pour_naitre(a.lecture_regles_fichier_lif()));
                 int [] y = (a.extraire_nb_pour_survivre(a.lecture_regles_fichier_lif()));
@@ -197,14 +184,6 @@ public class Principale {
                 }
                 System.out.println("\n\n\n");
             }
-        }
-        if (args[0].equals("-queue")){
-            int max = Integer.parseInt(args[1]);
-            f = args[2];
-            Rules a = new Rules();
-            Liste dep = lecture_config_initiale_fichier_lif (lecture_paire_fichier_lif (f), f);
-            a.liste = dep;
-            System.out.println("\n\n\n" + a.taille_queue(a.liste, a.periode(a.liste)));
         }
     }
 }
