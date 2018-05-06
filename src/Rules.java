@@ -27,7 +27,7 @@ public class Rules {
         String i;
         char[] x;
         try {
-            FileReader f = new FileReader(this.fichier);
+            FileReader f = new FileReader("lif/a.lif");
             BufferedReader b = new BufferedReader(f);
             String s = " ";
             while ((s = b.readLine()) != null) {
@@ -118,7 +118,7 @@ public class Rules {
      * @param t
      *      La liste des cellules vivantes
      * @param tab
-     *      Le tableau contanant le nombre de voisin possible pour qu'une cellule naisse
+     *      Le tableau contenant le nombre de voisins possibles pour qu'une cellule naisse
      *
      * @return la liste des cellules qui naissent
      *
@@ -185,57 +185,18 @@ public class Rules {
     /**
      * <p>
      *     Renvois la liste des cellules qui survivent.
-     *     Pour chaque valeur du tableau placé en parametres,
      *
      * </p>
+     *
      * @param t
+     *      La liste des cellules vivantes
      * @param tab
-     * @return
+     *      Le tableau contenant les differents nombres de voisins possible pour qu'une cellule survive
+     *
+     * @return la liste des cellules qui naissent
+     *
+     * @see Liste#addTrier
      */
-    /*public Liste vivantsquirestentvivants(Liste t, int[] tab) {
-        Liste lesvoisinsvivants = new Liste();
-        Maillon<Paire> ref = t.tete;
-        while (ref != null) {
-            for (int i = 0; i < tab.length; i++) {
-                Paire p1 = new Paire(ref.getValeur().getx() - 1, ref.getValeur().gety() + 1, 0);
-                if ((NombreVoisin(t, p1) == tab[i]) && !lesvoisinsvivants.contains(p1) && t.contains(p1)) {
-                    lesvoisinsvivants.addTrier(p1); // ou ref car on est pas sur de pouvoir ajoute direct une paire
-                }
-                Paire p2 = new Paire(ref.getValeur().getx(), ref.getValeur().gety() + 1, 0);
-                if ((NombreVoisin(t, p2) == tab[i]) && !lesvoisinsvivants.contains(p2) && t.contains(p2)) {
-                    lesvoisinsvivants.addTrier(p2); // ou ref car on est pas sur de pouvoir ajoute direct une paire
-                }
-                Paire p3 = new Paire(ref.getValeur().getx() + 1, ref.getValeur().gety() + 1, 0);
-                if ((NombreVoisin(t, p3) == tab[i]) && !lesvoisinsvivants.contains(p3) && t.contains(p3)) {
-                    lesvoisinsvivants.addTrier(p3); // ou ref car on est pas sur de pouvoir ajoute direct une paire
-                }
-                Paire p4 = new Paire(ref.getValeur().getx() - 1, ref.getValeur().gety(), 0);
-                if ((NombreVoisin(t, p4) == tab[i]) && !lesvoisinsvivants.contains(p4) && t.contains(p4)) {
-                    lesvoisinsvivants.addTrier(p4); // ou ref car on est pas sur de pouvoir ajoute direct une paire
-                }
-                Paire p5 = new Paire(ref.getValeur().getx() + 1, ref.getValeur().gety(), 0);
-                if ((NombreVoisin(t, p5) == tab[i]) && !lesvoisinsvivants.contains(p5) && t.contains(p5)) {
-                    lesvoisinsvivants.addTrier(p5); // ou ref car on est pas sur de pouvoir ajoute direct une paire
-                }
-                Paire p6 = new Paire(ref.getValeur().getx() - 1, ref.getValeur().gety() - 1, 0);
-                if ((NombreVoisin(t, p6) == tab[i]) && !lesvoisinsvivants.contains(p6) && t.contains(p6)) {
-                    lesvoisinsvivants.addTrier(p6); // ou ref car on est pas sur de pouvoir ajoute direct une paire
-                }
-                Paire p7 = new Paire(ref.getValeur().getx(), ref.getValeur().gety() - 1, 0);
-                if ((NombreVoisin(t, p7) == tab[i]) && !lesvoisinsvivants.contains(p7) && t.contains(p7)) {
-                    lesvoisinsvivants.addTrier(p7); // ou ref car on est pas sur de pouvoir ajoute direct une paire
-                }
-                Paire p8 = new Paire(ref.getValeur().getx() + 1, ref.getValeur().gety() - 1, 0);
-                if ((NombreVoisin(t, p8) == tab[i]) && !lesvoisinsvivants.contains(p8) && t.contains(p8)) {
-                    lesvoisinsvivants.addTrier(p8); // ou ref car on est pas sur de pouvoir ajoute direct une paire
-                }
-                System.out.println(" ");
-            }
-            ref = ref.getSuivant();
-        }
-        return lesvoisinsvivants;
-    }*/
-
     public Liste vivantsquirestentvivants(Liste t, int[] tab) {
         Liste lessurvivants = new Liste();
         Maillon<Paire> ref = t.tete;
@@ -369,56 +330,28 @@ public class Rules {
         return p;
      }
 
-    /**
-     *
-     * @param p
-     * @param t
-     * @param tab
-     * @return
-     */
-     public boolean verif_regles(Paire p, Liste t, int[] tab) {
-        for (int i = 0; i < tab.length; i++) {
-            System.out.println("Nombre voisin : " + NombreVoisin(t, p));
-            System.out.println("tab [" + i + "] : " + tab[i]);
-            if (NombreVoisin(t, p) == tab[i]) {
-                return true;
-            }
-        }
-        return false;
-     }
-
-    /**
-     * Retourne la periode de la liste en parametre
-     *
-     * @param t
-     *      La liste dont on cherche la periode
-     *
-     * @return la periode de la liste en parametre
-     *
-     * @see Rules#newgeneration
-     * @see Liste#identique
-     */
-     public int periode(Liste t, int max) {
+     int periode(Liste t) {
         Liste initiale;
         Liste suivante;
         int periode = 0;
+        boolean sameconfig = false;
         initiale = t;
         suivante = newgeneration(t);
         if (initiale.identique(suivante)) {
-            return 1;
+            return periode;
         }
-        while (max != 0) {
+        while (!sameconfig) {
             periode++;
             initiale = newgeneration(initiale);
             suivante = newgeneration(suivante);
             suivante = newgeneration(suivante);
-            max--;
             if (initiale.identique(suivante)) {
-                return periode+1;
+                sameconfig = true;
+                periode++;
             }
         }
-        return 0; //si la methode retourne 0, cela signifie que la periode n'as pas ete trouvé dans le temps max donné
-     }
+        return periode;
+    }
 
     /**
      * Retourne le comportement asymptotique de la liste en parametre

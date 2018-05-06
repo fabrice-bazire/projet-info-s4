@@ -1,5 +1,0 @@
-Manifest-Version: 1.0
-Created-By: 1.4.2 (Sun Microsystems Inc.)
-Name: Amina, Cecile, Martin et Fabrice
-Main-Class: Principale
-
